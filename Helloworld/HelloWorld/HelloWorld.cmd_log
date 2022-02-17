@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "/home/gwynbleidd/XilinxVerilogAsicSha256/Helloworld/HelloWorld/HelloWorld.xst" -ofn "/home/gwynbleidd/XilinxVerilogAsicSha256/Helloworld/HelloWorld/HelloWorld.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/gwynbleidd/XilinxVerilogAsicSha256/Helloworld/copypaste/cmods6.ucf -p xa7a100t-csg324-2I HelloWorld.ngc HelloWorld.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o HelloWorld_map.ncd HelloWorld.ngd HelloWorld.pcf 
