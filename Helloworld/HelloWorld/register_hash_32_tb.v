@@ -21,7 +21,8 @@
 // Additional Comments:
 // 
 ////////////////////////////////////////////////////////////////////////////////
-module register_32_tb;
+
+module register_hash_32_tb;
 
 	// Inputs
 	reg clk;
@@ -32,7 +33,7 @@ module register_32_tb;
 	wire [31:0] Q;
 
 	// Instantiate the Unit Under Test (UUT)
-	register_32 uut (
+	register_hash_32 uut (
 		.clk(clk), 
 		.reset(reset), 
 		.data(data), 
@@ -41,9 +42,9 @@ module register_32_tb;
 
 	initial begin
 		// Initialize Inputs
-		clk = 1;
+		clk = 0;
 		reset = 0;
-		data = 32'h111fffaa;
+		data = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;

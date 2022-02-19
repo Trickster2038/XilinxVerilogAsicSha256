@@ -18,7 +18,9 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module register_32 (clk, reset, data, Q);
+module register_hash_32 
+#(parameter DEFAULT_VALUE = 32'h6a09e667)
+(clk, reset, data, Q);
 	 
 	input wire clk;
 	input wire reset;
@@ -27,7 +29,7 @@ module register_32 (clk, reset, data, Q);
 	 
 	always @(posedge reset or posedge clk) begin
 		if(reset == 1) begin
-			Q <= 0'h00000000;
+			Q <= DEFAULT_VALUE;
 		end else begin
 			Q <= data;
 		end

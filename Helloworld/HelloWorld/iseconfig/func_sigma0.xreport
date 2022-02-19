@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-02-19T22:12:59</DateModified>
+  <DateModified>2022-02-19T22:16:32</DateModified>
   <ModuleName>func_sigma0</ModuleName>
-  <SummaryTimeStamp>2022-02-19T21:56:39</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/iseconfig/top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld\</ImplementationReportsDirectory>
-  <DateInitialized>2022-02-19T21:47:27</DateInitialized>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/iseconfig/func_sigma0.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld</ImplementationReportsDirectory>
+  <DateInitialized>2022-02-19T22:14:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
