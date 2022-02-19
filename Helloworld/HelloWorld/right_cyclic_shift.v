@@ -18,9 +18,8 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module right_cyclic_shift(num, out);
-	
-	parameter N = 1;
+module right_cyclic_shift #(parameter N=1) 
+	(num, out);
 	
 	input wire[31:0] num;
 	output reg[31:0] out;
@@ -29,7 +28,7 @@ module right_cyclic_shift(num, out);
 	
 	always @* begin
 		out = num;
-		for(i=0; i<1; i=i+1) begin
+		for(i=0; i<N; i=i+1) begin
 			out[31:0] = {out[0], out[31:1]};
 		end
 	end

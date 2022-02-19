@@ -18,10 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module register_32(clk, reset, data, Q);
+module register_32 
+#(parameter DEFAULT_VALUE = 32'h6a09e667)
+(clk, reset, data, Q);
 	 
-	parameter DEFAULT_VALUE = 32'h6a09e667;
-	  
 	input wire clk;
 	input wire reset;
 	input wire[31:0] data;

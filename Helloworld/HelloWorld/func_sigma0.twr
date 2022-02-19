@@ -1,0 +1,84 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml func_sigma0.twx func_sigma0.ncd -o func_sigma0.twr
+func_sigma0.pcf
+
+Design file:              func_sigma0.ncd
+Physical constraint file: func_sigma0.pcf
+Device,package,speed:     xc6slx4,cpg196,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+in_A<0>        |func<31>       |    7.296|
+in_A<1>        |func<0>        |    8.922|
+in_A<2>        |func<1>        |    9.410|
+in_A<3>        |func<2>        |    8.807|
+in_A<4>        |func<3>        |   10.515|
+in_A<5>        |func<4>        |   10.357|
+in_A<6>        |func<5>        |   10.479|
+in_A<7>        |func<6>        |   10.677|
+in_A<8>        |func<7>        |   10.101|
+in_A<9>        |func<8>        |   10.174|
+in_A<10>       |func<9>        |   10.611|
+in_A<11>       |func<10>       |   10.217|
+in_A<12>       |func<11>       |   10.279|
+in_A<13>       |func<12>       |   10.518|
+in_A<14>       |func<13>       |    9.997|
+in_A<15>       |func<14>       |   10.165|
+in_A<16>       |func<15>       |   10.059|
+in_A<17>       |func<16>       |   11.041|
+in_A<18>       |func<17>       |   10.904|
+in_A<19>       |func<18>       |   11.168|
+in_A<20>       |func<19>       |   11.026|
+in_A<21>       |func<20>       |   11.759|
+in_A<22>       |func<21>       |   12.296|
+in_A<23>       |func<22>       |   12.545|
+in_A<24>       |func<23>       |   11.664|
+in_A<25>       |func<24>       |   10.955|
+in_A<26>       |func<25>       |    8.905|
+in_A<27>       |func<26>       |    8.845|
+in_A<28>       |func<27>       |   10.857|
+in_A<29>       |func<28>       |    8.950|
+in_A<30>       |func<29>       |    9.062|
+in_A<31>       |func<30>       |    8.809|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Feb 19 21:56:36 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4553 MB
+
+
+
