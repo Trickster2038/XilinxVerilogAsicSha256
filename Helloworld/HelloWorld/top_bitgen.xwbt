@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\top.ncd
+OUTFILE=C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\top.bit
+FAMILY=Spartan6
+PART=xc6slx4-2cpg196
+WORKINGDIR=C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld
+LICENSE=WebPack
+USER_INFO=212406546_0_0_601

@@ -1,21 +1,18 @@
-Release 14.7 - xst P.20131013 (lin64)
+Release 14.7 - xst P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> 
-Parameter TMPDIR set to xst/projnav.tmp
+--> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
---> 
-Parameter xsthdpdir set to xst
+--> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.15 secs
  
---> 
-Reading design: top.prj
+--> Reading design: top.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -108,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/gwynbleidd/XilinxVerilogAsicSha256/Helloworld/copypaste/top.v" into library work
+Analyzing Verilog file "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\copypaste\top.v" into library work
 Parsing module <top>.
 
 =========================================================================
@@ -122,7 +119,7 @@ Elaborating module <top>.
 =========================================================================
 
 Synthesizing Unit <top>.
-    Related source file is "/home/gwynbleidd/XilinxVerilogAsicSha256/Helloworld/copypaste/top.v".
+    Related source file is "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\copypaste\top.v".
     Summary:
 	no macro.
 Unit <top> synthesized.
@@ -274,13 +271,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.09 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.51 secs
  
 --> 
 
-
-Total memory usage is 375832 kilobytes
+Total memory usage is 4486204 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
