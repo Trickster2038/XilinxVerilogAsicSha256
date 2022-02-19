@@ -1,0 +1,17 @@
+START:Strategy:1:MapRunTime
+REMOTE_PID:384
+RUNNING:384:840:MapRunTime:map:top.ngd: -ol high -w  -p xc6slx4-cpg196-2 -o top_map.ncd  C:cl:bslUsers:bslProfessional:bslDesktop:bslXilinxVerilogAsicSha256:bslHelloworld:bslHelloWorld:bslsmartxplorer_results:bslrun1:bsltop.pcf
+STATUS:MapRunTime:map:Score:None:lut:None:slice_reg:0 (0%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:15.07 secs 
+STATUS:MapRunTime:map:Score:None:lut:1 (1%):slice_reg:0 (0%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:15.07 secs 
+STATUS:MapRunTime:map:Score:None:lut:1 (1%):slice_reg:0 (0%):slice:1 (1%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:15.07 secs 
+STATUS:MapRunTime:map:Score:None:lut:1 (1%):slice_reg:0 (0%):slice:1 (1%):bram:0:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:15.07 secs 
+STATUS:MapRunTime:map:Score:None:lut:1 (1%):slice_reg:0 (0%):slice:1 (1%):bram:0:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:15.07 secs 
+STATUS:MapRunTime:map:Score:None:lut:1 (1%):slice_reg:0 (0%):slice:1 (1%):bram:0:dsp48:0 (0%):mult18x18:None:Power:None:wnsInfo:None:Time:15.07 secs 
+DONE:map:0
+RUNNING:384:7232:MapRunTime:par:top_map.ncd: -ol high  -w top.ncd  C:cl:bslUsers:bslProfessional:bslDesktop:bslXilinxVerilogAsicSha256:bslHelloworld:bslHelloWorld:bslsmartxplorer_results:bslrun1:bsltop.pcf
+DONE:par:0
+RUNNING:384:4412:MapRunTime:trce:C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\smartxplorer_results\run1\top.ncd:C:cl:bslUsers:bslProfessional:bslDesktop:bslXilinxVerilogAsicSha256:bslHelloworld:bslHelloWorld:bslsmartxplorer_results:bslrun1:bsltop.pcf -xml C:cl:bslUsers:bslProfessional:bslDesktop:bslXilinxVerilogAsicSha256:bslHelloworld:bslHelloWorld:bslsmartxplorer_results:bslrun1:bsltop.twx -v 3 -s 2 -n 3 -fastpaths    -o C:cl:bslUsers:bslProfessional:bslDesktop:bslXilinxVerilogAsicSha256:bslHelloworld:bslHelloWorld:bslsmartxplorer_results:bslrun1:bsltop.twr
+DONE:trce:0
+START:Strategy:3:MapGlobOptIOReg
+REMOTE_PID:3544
+RUNNING:3544:2216:MapGlobOptIOReg:map:top.ngd: -ol high -global_opt speed -pr b -w  -p xc6slx4-cpg196-2 -o top_map.ncd  C:cl:bslUsers:bslProfessional:bslDesktop:bslXilinxVerilogAsicSha256:bslHelloworld:bslHelloWorld:bslsmartxplorer_results:bslrun3:bsltop.pcf

@@ -1,0 +1,142 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe
+C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\smartxplorer_results\run1\top.ncd
+C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\smartxplorer_results\run1\top.pcf
+-xml
+C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\smartxplorer_results\run1\top.twx
+-v 3 -s 2 -n 3 -fastpaths -o
+C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\smartxplorer_results\run1\top.twr
+
+Design file:              top.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc6slx4,cpg196,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock btn_1
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+btn_0       |    7.792(R)|      SLOW  |    0.689(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<0>   |    2.883(R)|      SLOW  |   -0.630(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<1>   |    3.084(R)|      SLOW  |   -0.829(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<2>   |    4.129(R)|      SLOW  |   -1.740(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<3>   |    4.728(R)|      SLOW  |   -1.990(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<4>   |    4.480(R)|      SLOW  |   -1.817(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<5>   |    4.283(R)|      SLOW  |   -1.804(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<6>   |    4.455(R)|      SLOW  |   -1.809(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<7>   |    4.973(R)|      SLOW  |   -2.137(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<8>   |    4.368(R)|      SLOW  |   -1.770(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<9>   |    3.924(R)|      SLOW  |   -1.523(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<10>  |    3.558(R)|      SLOW  |   -1.260(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<11>  |    4.055(R)|      SLOW  |   -1.454(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<12>  |    4.470(R)|      SLOW  |   -1.727(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<13>  |    5.290(R)|      SLOW  |   -2.241(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<14>  |   -0.109(R)|      FAST  |    1.683(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<15>  |   -0.098(R)|      SLOW  |    1.595(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<16>  |   -0.182(R)|      FAST  |    1.756(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<17>  |   -0.079(R)|      SLOW  |    1.576(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<18>  |   -0.163(R)|      FAST  |    1.737(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<19>  |   -0.077(R)|      SLOW  |    1.574(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<20>  |    5.403(R)|      SLOW  |   -2.346(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<21>  |    5.239(R)|      SLOW  |   -2.269(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+data_A<22>  |   -0.101(R)|      FAST  |    1.675(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<23>  |   -0.013(R)|      SLOW  |    1.510(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<24>  |   -0.097(R)|      FAST  |    1.671(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<25>  |   -0.076(R)|      SLOW  |    1.573(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<26>  |   -0.160(R)|      FAST  |    1.734(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<27>  |   -0.153(R)|      FAST  |    1.727(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<28>  |   -0.155(R)|      FAST  |    1.729(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<29>  |   -0.071(R)|      SLOW  |    1.568(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<30>  |   -0.158(R)|      FAST  |    1.732(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+data_A<31>  |   -0.074(R)|      SLOW  |    1.571(R)|      SLOW  |led_4_OBUF_BUFG   |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock btn_1 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+A_Q<0>      |         8.041(R)|      SLOW  |         3.077(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<1>      |         8.041(R)|      SLOW  |         3.077(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<2>      |         8.091(R)|      SLOW  |         3.127(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<3>      |         8.091(R)|      SLOW  |         3.127(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<4>      |         8.041(R)|      SLOW  |         3.077(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<5>      |         8.041(R)|      SLOW  |         3.077(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<6>      |         8.091(R)|      SLOW  |         3.127(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<7>      |         8.091(R)|      SLOW  |         3.127(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<8>      |         8.024(R)|      SLOW  |         3.060(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<9>      |         8.024(R)|      SLOW  |         3.060(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<10>     |         8.047(R)|      SLOW  |         3.083(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<11>     |         8.051(R)|      SLOW  |         3.087(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<12>     |         7.996(R)|      SLOW  |         3.032(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<13>     |         7.996(R)|      SLOW  |         3.032(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<14>     |        12.882(R)|      SLOW  |         5.409(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<15>     |        14.555(R)|      SLOW  |         6.372(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<16>     |        14.388(R)|      SLOW  |         6.267(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<17>     |        15.036(R)|      SLOW  |         6.719(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<18>     |        15.610(R)|      SLOW  |         7.076(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<19>     |        15.844(R)|      SLOW  |         7.239(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<20>     |         8.074(R)|      SLOW  |         3.110(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<21>     |         8.046(R)|      SLOW  |         3.082(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<22>     |        14.774(R)|      SLOW  |         6.610(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<23>     |        14.889(R)|      SLOW  |         6.758(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<24>     |        13.968(R)|      SLOW  |         6.161(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<25>     |        12.588(R)|      SLOW  |         5.438(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<26>     |        12.117(R)|      SLOW  |         5.138(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<27>     |        12.051(R)|      SLOW  |         5.101(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<28>     |        12.156(R)|      SLOW  |         5.122(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<29>     |        12.053(R)|      SLOW  |         5.103(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<30>     |        12.159(R)|      SLOW  |         5.125(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+A_Q<31>     |        12.056(R)|      SLOW  |         5.106(R)|      FAST  |led_4_OBUF_BUFG   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+btn_0          |led_0          |    8.122|
+btn_0          |led_2          |   10.379|
+btn_0          |led_3          |   10.930|
+btn_1          |led_1          |    9.080|
+btn_1          |led_2          |    7.933|
+btn_1          |led_3          |    8.484|
+btn_1          |led_4          |    7.277|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Feb 19 20:10:39 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4550 MB
+
+
+

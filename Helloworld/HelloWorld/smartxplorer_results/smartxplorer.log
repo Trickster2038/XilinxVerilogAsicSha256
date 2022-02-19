@@ -1,0 +1,34 @@
+
+Release 14.7 SmartXplorer
+Copyright(c) 1995-2010 Xilinx, Inc. All rights reserved.
+"E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\smartxplorer.exe" -p xc6slx4-cpg196-2 -b -wd smartxplorer_results top.ngd -to "-v 3 -s 2 -n 3 -fastpaths -xml top.twx " -host_list hostlistfile.txt -max_runs 7
+
+SmartXplorer Settings: 
+
+designName=C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\top.ngd 
+write_dir=C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\smartxplorer_results 
+host_list=C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\hostlistfile.txt 
+part=xc6slx4-cpg196-2 
+strategy_file=None 
+notify=None 
+source_dir=C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld 
+batch_mode=True 
+run_all_strategies=False 
+list_all_strategies=False 
+remote_command=rsh
+area_report="lut;slice_reg"
+power_options=off
+trce_options="-v 3 -s 2 -n 3 -fastpaths -xml top.twx "
+max_runs=7
+
+Starting SmartXplorer...
+See file 'smartxplorer.html' for real-time report.
+
+
+Running SmartXplorer strategies...
+
+
+Ctrl C detected
+INFO: ...Killing all jobs
+
+SmartXplorer Aborted.

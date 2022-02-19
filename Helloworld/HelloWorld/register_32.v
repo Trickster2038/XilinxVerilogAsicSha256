@@ -21,16 +21,18 @@
 module register_32(clk, reset, data, Q);
 	 
 	 parameter DEFAULT_VALUE = 32'h6a09e667;
-	 
+	  
 	 input wire clk;
 	 input wire reset;
-	 input wire[61:0] data;
-	 output reg [61:0] Q;
+	 input wire[31:0] data;
+	 output reg [31:0] Q;
 	 
-	 always @(posedge reset)
-		Q <= DEFAULT_VALUE;
-		
-	 always @(posedge clk)
-		Q <= data;
+	 always @(posedge reset or posedge clk) begin
+		if(reset == 1) begin
+			Q <= DEFAULT_VALUE;
+		end else begin
+			Q <= data;
+		end
+	 end
 
 endmodule

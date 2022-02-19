@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/register_32.v -lang verilog -prj HelloWorld -o register_32.spl -module register_32 -template E:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 register_32.spl C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/register_32.sym 

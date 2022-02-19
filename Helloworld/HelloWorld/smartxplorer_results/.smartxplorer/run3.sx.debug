@@ -1,0 +1,39 @@
+strategySpecString = ':oc:sqmap:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsglobal_opt:spspeed:sp:dspr:spb:sp:dsw:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spC:clcl:clbslUsers:clbslProfessional:clbslDesktop:clbslXilinxVerilogAsicSha256:clbslHelloworld:clbslHelloWorld:sp:dsp:spxc6slx4:dscpg196:ds2:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp2:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:sptop.twx:sp:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp3:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:dsxe:spn:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapGlobOptIOReg:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.7:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqC:cl:bsl:bslUsers:bsl:bslProfessional:bsl:bslDesktop:bsl:bslXilinxVerilogAsicSha256:bsl:bslHelloworld:bsl:bslHelloWorld:sq:cc'
+Xilinx Environment Variables:
+
+{'XILINX': 'E:\\Xilinx\\14.7\\ISE_DS\\ISE\\'
+'PATH': 'E:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\lib\\nt64;E:\\Xilinx\\14.7\\ISE_DS\\ISE\\\\bin\\nt64;E:\\Xilinx\\14.7\\ISE_DS\\ISE\\bin\\nt64;E:\\Xilinx\\14.7\\ISE_DS\\ISE\\lib\\nt64;E:\\Xilinx\\14.7\\ISE_DS\\ISE\\..\\..\\..\\DocNav;E:\\Xilinx\\14.7\\ISE_DS\\PlanAhead\\bin;E:\\Xilinx\\14.7\\ISE_DS\\EDK\\bin\\nt64;E:\\Xilinx\\14.7\\ISE_DS\\EDK\\lib\\nt64;E:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\nt\\bin;E:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\powerpc-eabi\\nt\\bin;E:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnuwin\\bin;E:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\arm\\nt\\bin;E:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_be\\bin;E:\\Xilinx\\14.7\\ISE_DS\\EDK\\gnu\\microblaze\\linux_toolchain\\nt64_le\\bin;E:\\Xilinx\\14.7\\ISE_DS\\common\\bin\\nt64;E:\\Xilinx\\14.7\\ISE_DS\\common\\lib\\nt64;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Users\\Professional\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Professional\\AppData\\Local\\GitHubDesktop\\bin'
+'XILINX_PLANAHEAD': 'E:\\Xilinx\\14.7\\ISE_DS\\PlanAhead'
+'XILINX_DSP': 'E:\\Xilinx\\14.7\\ISE_DS\\ISE'
+'XILINX_EDK': 'E:\\Xilinx\\14.7\\ISE_DS\\EDK'}
+envDict = {}
+Astakhov-Win_0.stat:C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\smartxplorer_results\.smartxplorer\.sx.keepAlive.Astakhov-Win_0
+INFO: total number of threads running this host None
+...searching for file: mapgloboptioreg.xds
+Creating XDS file ... mapgloboptioreg.xds
+###################################
+
+      <property name = "Map:Placer Effort Level"
+               value = "High" />
+      <property name = "Map:Global Optimization"
+               value = "Speed" />
+      <property name = "Map:Pack I/O Registers/Latches into IOBs"
+               value = "For Inputs and Outputs" />
+      <property name = "Place &amp; Route:Place &amp; Route Effort Level (Overall)"
+               value = "High" />
+      <property name = "Place &amp; Route:Extra Effort (Highest PAR level only)"
+               value = "Normal" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Number of Paths in Error/Verbose Report"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Type"
+               value = "Verbose Report" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Change Device Speed To"
+               value = "-2" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Paths by Endpoint"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Fastest Path(s) in Each Constraint"
+               value = "true" />
+###################################
+launching map with options  -ol high -global_opt speed -pr b -w  -p xc6slx4-cpg196-2 -o top_map.ncd  C:cl:bslUsers:bslProfessional:bslDesktop:bslXilinxVerilogAsicSha256:bslHelloworld:bslHelloWorld:bslsmartxplorer_results:bslrun3:bsltop.pcf...
+runTask: map top.ngd -ol high -global_opt speed -pr b -w -p xc6slx4-cpg196-2 -o top_map.ncd C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\smartxplorer_results\run3\top.pcf
+args = ['map', 'top.ngd', '-ol', 'high', '-global_opt', 'speed', '-pr', 'b', '-w', '-p', 'xc6slx4-cpg196-2', '-o', 'top_map.ncd', 'C:\\Users\\Professional\\Desktop\\XilinxVerilogAsicSha256\\Helloworld\\HelloWorld\\smartxplorer_results\\run3\\top.pcf']
