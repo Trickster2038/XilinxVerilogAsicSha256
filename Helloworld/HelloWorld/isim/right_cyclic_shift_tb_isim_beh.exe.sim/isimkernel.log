@@ -1,0 +1,28 @@
+Command line:
+   right_cyclic_shift_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50663
+
+Sat Feb 19 21:28:00 2022
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5308.6 Meg
+
+ Total Signals          : 15
+ Total Nets             : 77
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 285
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 5308.6 Meg
+
+Sat Feb 19 21:28:06 2022
+
