@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    18:27:51 02/19/2022 
+// Create Date:    20:37:53 02/19/2022 
 // Design Name: 
-// Module Name:    register_32 
+// Module Name:    func_Ma 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,21 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module register_32(clk, reset, data, Q);
-	 
-	parameter DEFAULT_VALUE = 32'h6a09e667;
-	  
-	input wire clk;
-	input wire reset;
-	input wire[31:0] data;
-	output reg [31:0] Q;
-	 
-	always @(posedge reset or posedge clk) begin
-		if(reset == 1) begin
-			Q <= DEFAULT_VALUE;
-		end else begin
-			Q <= data;
-		end
+module func_Ma(in_A, in_B, in_C, func);
+
+	input wire[31:0] in_A;
+	input wire[31:0] in_B;
+	input wire[31:0] in_C;
+	output reg[31:0] func;
+	
+	always @* begin
+		func <= (in_A & in_B) ^ (in_A & in_C) ^ (in_B & in_C);
 	end
-  
+
 endmodule

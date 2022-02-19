@@ -5,5 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="Xst" num="2369" delta="new" >Empty project file &quot;<arg fmt="%s" index="1">\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\register_32.prj</arg>&quot;
+</msg>
+
 </messages>
 

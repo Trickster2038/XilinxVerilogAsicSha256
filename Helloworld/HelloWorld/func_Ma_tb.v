@@ -4,15 +4,15 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   18:53:00 02/19/2022
-// Design Name:   register_32
-// Module Name:   C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/register_32_tb.v
+// Create Date:   20:46:40 02/19/2022
+// Design Name:   func_Ma
+// Module Name:   C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_Ma_tb.v
 // Project Name:  HelloWorld
 // Target Device:  
 // Tool versions:  
 // Description: 
 //
-// Verilog Test Fixture created by ISE for module: register_32
+// Verilog Test Fixture created by ISE for module: func_Ma
 //
 // Dependencies:
 // 
@@ -22,47 +22,35 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module register_32_tb;
+module func_Ma_tb;
 
 	// Inputs
-	reg clk;
-	reg reset;
-	reg [31:0] data;
-
-	// Outputs
-	wire [31:0] Q;
+	reg [31:0] in_A;
+	reg [31:0] in_B;
+	reg [31:0] in_C;
+	
+	wire [31:0] func;
 
 	// Instantiate the Unit Under Test (UUT)
-	register_32 uut (
-		.clk(clk), 
-		.reset(reset), 
-		.data(data), 
-		.Q(Q)
+	func_Ma uut (
+		.in_A(in_A), 
+		.in_B(in_B), 
+		.in_C(in_C),
+		.func(func)
 	);
 
 	initial begin
 		// Initialize Inputs
-		clk = 0;
-		reset = 0;
-		data = 0;
+		in_A = 32'h6a09e667;
+		in_B = 32'hbb67ae85;
+		in_C = 32'h3c6ef372;
 
 		// Wait 100 ns for global reset to finish
 		#100;
-		
-		clk = 0;
-		reset = 1;
-		data = 0;
-
-		// Wait 100 ns for global reset to finish
-		#100;
-		
-		clk = 1;
-		reset = 0;
-		data = 32'h666777aa;
         
 		// Add stimulus here
 
 	end
-       
+      
 endmodule
 

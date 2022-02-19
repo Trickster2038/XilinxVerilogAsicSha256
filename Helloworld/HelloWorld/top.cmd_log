@@ -1,2 +1,0 @@
-xst -intstyle ise -ifn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/top.xst" -ofn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/top.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-cpg196-2 top.ngc top.ngd  

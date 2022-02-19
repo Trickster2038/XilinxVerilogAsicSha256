@@ -1,4 +1,4 @@
-`include "register_32.v"
+//`include "register_32.v"
 
 module top
 (
@@ -14,7 +14,7 @@ module top
 	output led_4
 ); 
 
-	register_32 A( .Q(A_Q), .clk(btn_1), .reset(btn_0), .data(data_A));
+	//register_32 A( .Q(A_Q), .clk(btn_1), .reset(btn_0), .data(data_A));
 	
 	assign led_4 = btn_1;
     assign led_0 = btn_0;

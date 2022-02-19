@@ -17,7 +17,7 @@
   <files>
     <file xil_pn:name="../copypaste/top.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="1"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="top_tb.v" xil_pn:type="FILE_VERILOG">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
@@ -30,6 +30,20 @@
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="92"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="92"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="92"/>
+    </file>
+    <file xil_pn:name="func_Ma.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
+    </file>
+    <file xil_pn:name="func_Ma_tb.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="0"/>
+      <association xil_pn:name="PostMapSimulation" xil_pn:seqID="29"/>
+      <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="29"/>
+      <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="29"/>
+    </file>
+    <file xil_pn:name="register_32.v" xil_pn:type="FILE_VERILOG">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="1"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="66"/>
     </file>
   </files>
 
@@ -370,7 +384,6 @@
     <!-- Do not hand-edit this section, as it will be overwritten when the    -->
     <!-- project is analyzed based on files automatically identified as       -->
     <!-- include files.                                                       -->
-    <file xil_pn:name="register_32.v" xil_pn:type="FILE_VERILOG"/>
   </autoManagedFiles>
 
 </project>
