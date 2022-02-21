@@ -1,19 +1,24 @@
-Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_ch_tb_isim_beh.exe -prj C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_ch_tb_beh.prj work.func_ch_tb work.glbl 
+Running: E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_t1_tb_isim_beh.exe -prj C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_t1_tb_beh.prj work.func_t1_tb work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 2
 Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Analyzing Verilog file "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_ch.v" into library work
-Analyzing Verilog file "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_ch_tb.v" into library work
+Analyzing Verilog file "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_t1.v" into library work
+Analyzing Verilog file "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_t1_tb.v" into library work
 Analyzing Verilog file "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
+Compiling module right_cyclic_shift(N=6)
+Compiling module right_cyclic_shift(N=11)
+Compiling module right_cyclic_shift(N=25)
+Compiling module func_sigma1
 Compiling module func_ch
-Compiling module func_ch_tb
+Compiling module func_t1
+Compiling module func_t1_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 3 Verilog Units
-Built simulation executable C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_ch_tb_isim_beh.exe
-Fuse Memory Usage: 27684 KB
-Fuse CPU Usage: 359 ms
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 8 Verilog Units
+Built simulation executable C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_t1_tb_isim_beh.exe
+Fuse Memory Usage: 27880 KB
+Fuse CPU Usage: 328 ms
