@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    20:37:53 02/19/2022 
+// Create Date:    17:31:19 02/21/2022 
 // Design Name: 
-// Module Name:    func_Ma 
+// Module Name:    func_ch 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,15 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module func_Ma(in_A, in_B, in_C, func);
+module func_ch(in_E, in_F, in_G, func);
 
-	input wire[31:0] in_A;
-	input wire[31:0] in_B;
-	input wire[31:0] in_C;
+	input wire[31:0] in_E;
+	input wire[31:0] in_F;
+	input wire[31:0] in_G;
 	output reg[31:0] func;
 	
 	always @* begin
-		func = (in_A & in_B) ^ (in_A & in_C) ^ (in_B & in_C);
+		func = (in_E & in_F) ^ ((~in_E) & in_G);
 	end
 
 endmodule

@@ -1,3 +1,3 @@
-verilog work "func_sigma1.v"
-verilog work "func_sigma1_tb.v"
+verilog work "func_ch.v"
+verilog work "func_ch_tb.v"
 verilog work "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
