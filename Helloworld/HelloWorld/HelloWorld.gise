@@ -22,104 +22,64 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="HelloWorld.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="func_ch_tb_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="func_ch_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="func_ch_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="func_sigma0_guide.ncd" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="func_sigma1_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="func_t1_tb_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="func_t1_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="func_t1_tb_isim_beh.wdb"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="func_t2_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="logical_unit.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="logical_unit.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="logical_unit.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="logical_unit.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="logical_unit.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="logical_unit.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="logical_unit.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="logical_unit.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="logical_unit_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="logical_unit_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="logical_unit_xst.xrpt"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="top_guide.ncd" xil_pn:origination="imported"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1645453068" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1645453068">
+    <transform xil_pn:end_ts="1645459338" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="807182451692073551" xil_pn:start_ts="1645459338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1645455659" xil_pn:in_ck="-4132778825730724840" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1645455659">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../copypaste/top.v"/>
-      <outfile xil_pn:name="func_Ma.v"/>
-      <outfile xil_pn:name="func_Ma_tb.v"/>
-      <outfile xil_pn:name="func_ch.v"/>
-      <outfile xil_pn:name="func_ch_tb.v"/>
-      <outfile xil_pn:name="func_sigma0.v"/>
-      <outfile xil_pn:name="func_sigma0_tb.v"/>
-      <outfile xil_pn:name="func_sigma1.v"/>
-      <outfile xil_pn:name="func_sigma1_tb.v"/>
-      <outfile xil_pn:name="func_t1.v"/>
-      <outfile xil_pn:name="func_t1_tb.v"/>
-      <outfile xil_pn:name="func_t2.v"/>
-      <outfile xil_pn:name="func_t2_tb.v"/>
-      <outfile xil_pn:name="register_32.v"/>
-      <outfile xil_pn:name="register_32_tb.v"/>
-      <outfile xil_pn:name="register_hash_32.v"/>
-      <outfile xil_pn:name="register_hash_32_tb.v"/>
-      <outfile xil_pn:name="right_cyclic_shift.v"/>
-      <outfile xil_pn:name="right_cyclic_shift_tb.v"/>
-      <outfile xil_pn:name="top_tb.v"/>
-    </transform>
-    <transform xil_pn:end_ts="1645455659" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-2420487821720415364" xil_pn:start_ts="1645455659">
+    <transform xil_pn:end_ts="1645459338" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2948456807306034770" xil_pn:start_ts="1645459338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1645455659" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1983610055437296442" xil_pn:start_ts="1645455659">
+    <transform xil_pn:end_ts="1645459338" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1645459338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1645453068" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2506766480042056453" xil_pn:start_ts="1645453068">
+    <transform xil_pn:end_ts="1645459338" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-7192378999862524591" xil_pn:start_ts="1645459338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1645455659" xil_pn:in_ck="-4132778825730724840" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1645455659">
+    <transform xil_pn:end_ts="1645459338" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-5609353908614239355" xil_pn:start_ts="1645459338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="../copypaste/top.v"/>
-      <outfile xil_pn:name="func_Ma.v"/>
-      <outfile xil_pn:name="func_Ma_tb.v"/>
-      <outfile xil_pn:name="func_ch.v"/>
-      <outfile xil_pn:name="func_ch_tb.v"/>
-      <outfile xil_pn:name="func_sigma0.v"/>
-      <outfile xil_pn:name="func_sigma0_tb.v"/>
-      <outfile xil_pn:name="func_sigma1.v"/>
-      <outfile xil_pn:name="func_sigma1_tb.v"/>
-      <outfile xil_pn:name="func_t1.v"/>
-      <outfile xil_pn:name="func_t1_tb.v"/>
-      <outfile xil_pn:name="func_t2.v"/>
-      <outfile xil_pn:name="func_t2_tb.v"/>
-      <outfile xil_pn:name="register_32.v"/>
-      <outfile xil_pn:name="register_32_tb.v"/>
-      <outfile xil_pn:name="register_hash_32.v"/>
-      <outfile xil_pn:name="register_hash_32_tb.v"/>
-      <outfile xil_pn:name="right_cyclic_shift.v"/>
-      <outfile xil_pn:name="right_cyclic_shift_tb.v"/>
-      <outfile xil_pn:name="top_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1645455661" xil_pn:in_ck="-4132778825730724840" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8757577879362769495" xil_pn:start_ts="1645455659">
+    <transform xil_pn:end_ts="1645459338" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8892118355832505736" xil_pn:start_ts="1645459338">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="func_t1_tb_beh.prj"/>
-      <outfile xil_pn:name="func_t1_tb_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1645455661" xil_pn:in_ck="3039677256598897466" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1910321312260722490" xil_pn:start_ts="1645455661">
+    <transform xil_pn:end_ts="1645459473" xil_pn:in_ck="7546762320587430545" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-3522578290347254147" xil_pn:start_ts="1645459465">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="func_t1_tb_isim_beh.wdb"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="logical_unit.lso"/>
+      <outfile xil_pn:name="logical_unit.ngc"/>
+      <outfile xil_pn:name="logical_unit.ngr"/>
+      <outfile xil_pn:name="logical_unit.prj"/>
+      <outfile xil_pn:name="logical_unit.stx"/>
+      <outfile xil_pn:name="logical_unit.syr"/>
+      <outfile xil_pn:name="logical_unit.xst"/>
+      <outfile xil_pn:name="logical_unit_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
   </transforms>
 
