@@ -7,7 +7,7 @@
 // 
 // Create Date:    18:25:40 02/21/2022 
 // Design Name: 
-// Module Name:    logical_unit 
+// Module Name:    logical_module
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -20,7 +20,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module logical_unit
+module logical_module
 (in_A, in_B, in_C, in_D, 
 in_E, in_F, in_G, in_H,
 
