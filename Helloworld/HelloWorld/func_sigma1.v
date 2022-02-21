@@ -1,13 +1,12 @@
 `timescale 1ns / 1ps
-`include "func_sigma0.v"
-`include "func_Ma.v"
+`include "right_cyclic_shift.v"
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
 // 
-// Create Date:    22:22:36 02/19/2022 
+// Create Date:    17:03:15 02/21/2022 
 // Design Name: 
-// Module Name:    func_t2 
+// Module Name:    func_ch 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -20,23 +19,26 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module func_t2(in_A, in_B, in_C, func);
-	
-	input wire[31:0] in_A; 
-	input wire[31:0] in_B;
-	input wire[31:0] in_C;
+module func_sigma1(in_E, func);
+
+	input wire[31:0] in_E;
 	output reg[31:0] func;
 	
-	wire[31:0] wire_sigma0;
-	wire[31:0] wire_Ma;
+	wire[31:0] E6;
+	wire[31:0] E11;
+	wire[31:0] E25;
 	
-	func_sigma0 s0(.in_A(in_A), 
-		.func(wire_sigma0));
-	func_Ma ma(.in_A(in_A), .in_B(in_B),
-		.in_C(in_C), .func(wire_Ma));
+	right_cyclic_shift #(6) 
+	E6_node( .out (E6), .num (in_E));
+
+	right_cyclic_shift #(11) 
+	E11_node( .out (E11), .num (in_E));
+
+	right_cyclic_shift #(25) 
+	E25_node( .out (E25), .num (in_E));	
 	
 	always @* begin
-		func = wire_sigma0 + wire_Ma;
+		func = E6 ^ E11 ^ E25;
 	end
-		
+
 endmodule
