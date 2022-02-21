@@ -1,3 +1,5 @@
+`ifndef ROTR
+`define ROTR
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -30,8 +32,9 @@ module right_cyclic_shift #(parameter N=1)
 		out = num;
 		for(i=0; i<N; i=i+1) begin
 			out[31:0] = {out[0], out[31:1]};
-		end
+	 	end
 	end
-
-
+ 
 endmodule
+
+`endif

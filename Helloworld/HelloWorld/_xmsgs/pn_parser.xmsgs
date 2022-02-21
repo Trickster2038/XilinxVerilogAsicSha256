@@ -8,5 +8,49 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/logic_module.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/logic_module.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_t1.v&apos; in file &quot;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/logic_module.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">func_t1.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_sigma1.v&apos; in file &quot;func_t1.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">func_sigma1.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/right_cyclic_shift.v&apos; in file &quot;func_sigma1.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">func_t1.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_ch.v&apos; in file &quot;func_t1.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/logic_module.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_t2.v&apos; in file &quot;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/logic_module.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">func_t2.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_sigma0.v&apos; in file &quot;func_t2.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">func_sigma0.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/right_cyclic_shift.v&apos; in file &quot;func_sigma0.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">func_t2.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/func_Ma.v&apos; in file &quot;func_t2.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/register_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/register_hash_32.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/copypaste/top.v&quot; into library work</arg>
+</msg>
+
 </messages>
 
