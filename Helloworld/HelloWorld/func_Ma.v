@@ -23,10 +23,8 @@ module func_Ma(in_A, in_B, in_C, func);
 	input wire[31:0] in_A;
 	input wire[31:0] in_B;
 	input wire[31:0] in_C;
-	output reg[31:0] func;
+	output wire[31:0] func;
 	
-	always @* begin
-		func = (in_A & in_B) ^ (in_A & in_C) ^ (in_B & in_C);
-	end
+	assign func = (in_A & in_B) ^ (in_A & in_C) ^ (in_B & in_C);
 
 endmodule

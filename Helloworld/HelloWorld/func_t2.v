@@ -25,7 +25,7 @@ module func_t2(in_A, in_B, in_C, func);
 	input wire[31:0] in_A; 
 	input wire[31:0] in_B;
 	input wire[31:0] in_C;
-	output reg[31:0] func;
+	output wire[31:0] func;
 	
 	wire[31:0] wire_sigma0;
 	wire[31:0] wire_Ma;
@@ -35,8 +35,6 @@ module func_t2(in_A, in_B, in_C, func);
 	func_Ma ma(.in_A(in_A), .in_B(in_B),
 		.in_C(in_C), .func(wire_Ma));
 	
-	always @* begin
-		func = wire_sigma0 + wire_Ma;
-	end
-		
+    assign func = wire_sigma0 + wire_Ma;
+	
 endmodule

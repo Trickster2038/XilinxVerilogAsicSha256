@@ -42,12 +42,12 @@ out_E, out_F, out_G, out_H);
 		input wire [31:0] in_Ki;
 		input wire [31:0] in_Wi;
 		
-		output reg [31:0] out_A;
+		output [31:0] out_A;
 		output wire [31:0] out_B;
 		output wire [31:0] out_C;
 		output wire [31:0] out_D;
 		
-		output reg [31:0] out_E;
+		output [31:0] out_E;
 		output wire [31:0] out_F;
 		output wire [31:0] out_G;
 		output wire [31:0] out_H;
@@ -71,9 +71,7 @@ out_E, out_F, out_G, out_H);
 		func_t2 t2(.in_A(in_A), .in_B(in_B), 
 		.in_C(in_C), .func(wire_t2));
 		
-		always @* begin
-			out_E = in_D + wire_t1;
-			out_A = wire_t1 + wire_t2;
-		end
+		assign out_E = in_D + wire_t1;
+		assign out_A = wire_t1 + wire_t2;
 
 endmodule

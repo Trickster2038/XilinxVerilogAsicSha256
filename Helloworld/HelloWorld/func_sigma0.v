@@ -22,7 +22,7 @@
 module func_sigma0(in_A, func);
 
 	input wire[31:0] in_A;
-	output reg[31:0] func;
+	output wire[31:0] func;
 	
 	wire[31:0] A2;
 	wire[31:0] A13;
@@ -37,8 +37,6 @@ module func_sigma0(in_A, func);
 	right_cyclic_shift #(22) 
 	A22_node( .out (A22), .num (in_A));	
 	
-	always @* begin
-		func = A2 ^ A13 ^ A22;
-	end
+	assign func = A2 ^ A13 ^ A22;
 
 endmodule

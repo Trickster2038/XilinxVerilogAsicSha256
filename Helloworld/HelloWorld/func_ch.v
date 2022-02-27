@@ -23,10 +23,8 @@ module func_ch(in_E, in_F, in_G, func);
 	input wire[31:0] in_E;
 	input wire[31:0] in_F;
 	input wire[31:0] in_G;
-	output reg[31:0] func;
+	output wire[31:0] func;
 	
-	always @* begin
-		func = (in_E & in_F) ^ ((~in_E) & in_G);
-	end
+	assign func = (in_E & in_F) ^ ((~in_E) & in_G);
 
 endmodule

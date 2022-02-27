@@ -25,15 +25,18 @@ static const char *ng0 = "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/
 
 
 
-static void Always_38_0(char *t0)
+static void Cont_38_0(char *t0)
 {
-    char t7[8];
+    char t5[8];
     char *t1;
     char *t2;
     char *t3;
     char *t4;
-    char *t5;
     char *t6;
+    char *t7;
+    char *t8;
+    char *t9;
+    char *t10;
 
 LAB0:    t1 = (t0 + 3008U);
     t2 = *((char **)t1);
@@ -43,32 +46,29 @@ LAB0:    t1 = (t0 + 3008U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(38, ng0);
-    t2 = (t0 + 3328);
-    *((int *)t2) = 1;
-    t3 = (t0 + 3040);
-    *((char **)t3) = t2;
-    *((char **)t1) = &&LAB4;
+    t2 = (t0 + 1688U);
+    t3 = *((char **)t2);
+    t2 = (t0 + 1848U);
+    t4 = *((char **)t2);
+    memset(t5, 0, 8);
+    xsi_vlog_unsigned_add(t5, 32, t3, 32, t4, 32);
+    t2 = (t0 + 3408);
+    t6 = (t2 + 56U);
+    t7 = *((char **)t6);
+    t8 = (t7 + 56U);
+    t9 = *((char **)t8);
+    memcpy(t9, t5, 8);
+    xsi_driver_vfirst_trans(t2, 0, 31);
+    t10 = (t0 + 3328);
+    *((int *)t10) = 1;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(38, ng0);
-
-LAB5:    xsi_set_current_line(39, ng0);
-    t4 = (t0 + 1528U);
-    t5 = *((char **)t4);
-    t4 = (t0 + 1688U);
-    t6 = *((char **)t4);
-    memset(t7, 0, 8);
-    xsi_vlog_unsigned_add(t7, 32, t5, 32, t6, 32);
-    t4 = (t0 + 2088);
-    xsi_vlogvar_assign_value(t4, t7, 0, 0, 32);
-    goto LAB2;
-
 }
 
 
-extern void work_m_00000000001247721642_2648428061_init()
+extern void work_m_00000000003400605580_2648428061_init()
 {
-	static char *pe[] = {(void *)Always_38_0};
-	xsi_register_didat("work_m_00000000001247721642_2648428061", "isim/logic_module_tb_isim_beh.exe.sim/work/m_00000000001247721642_2648428061.didat");
+	static char *pe[] = {(void *)Cont_38_0};
+	xsi_register_didat("work_m_00000000003400605580_2648428061", "isim/logic_module_tb_isim_beh.exe.sim/work/m_00000000003400605580_2648428061.didat");
 	xsi_register_executes(pe);
 }

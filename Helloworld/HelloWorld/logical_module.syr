@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: logical_module.prj
 
@@ -159,18 +159,18 @@ Elaborating module <func_Ma>.
 
 Synthesizing Unit <logical_module>.
     Related source file is "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\logic_module.v".
-    Found 32-bit adder for signal <out_E> created at line 75.
-    Found 32-bit adder for signal <out_A> created at line 76.
+    Found 32-bit adder for signal <out_E> created at line 74.
+    Found 32-bit adder for signal <out_A> created at line 75.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 Unit <logical_module> synthesized.
 
 Synthesizing Unit <func_t1>.
     Related source file is "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld/func_t1.v".
-    Found 32-bit adder for signal <n0019> created at line 43.
-    Found 32-bit adder for signal <n0022> created at line 43.
-    Found 32-bit adder for signal <n0025> created at line 43.
-    Found 32-bit adder for signal <func> created at line 43.
+    Found 32-bit adder for signal <n0019> created at line 42.
+    Found 32-bit adder for signal <n0022> created at line 42.
+    Found 32-bit adder for signal <n0025> created at line 42.
+    Found 32-bit adder for signal <func> created at line 42.
     Summary:
 	inferred   4 Adder/Subtractor(s).
 Unit <func_t1> synthesized.
@@ -208,7 +208,7 @@ Unit <func_ch> synthesized.
 
 Synthesizing Unit <func_t2>.
     Related source file is "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld/func_t2.v".
-    Found 32-bit adder for signal <func> created at line 39.
+    Found 32-bit adder for signal <func> created at line 38.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 Unit <func_t2> synthesized.
@@ -453,8 +453,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.57 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.92 secs
  
 --> 
 
