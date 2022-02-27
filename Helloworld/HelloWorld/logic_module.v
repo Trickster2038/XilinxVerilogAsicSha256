@@ -29,31 +29,16 @@ in_Ki, in_Wi,
 out_A, out_B, out_C, out_D, 
 out_E, out_F, out_G, out_H);
 
-		input wire [31:0] in_A;
-		input wire [31:0] in_B;
-		input wire [31:0] in_C;
-		input wire [31:0] in_D;
+		input wire [31:0] in_A, in_B, in_C,
+		in_D, in_E, in_F, in_G, in_H;
 		
-		input wire [31:0] in_E;
-		input wire [31:0] in_F;
-		input wire [31:0] in_G;
-		input wire [31:0] in_H;
+		input wire [31:0] in_Ki, in_Wi;
 		
-		input wire [31:0] in_Ki;
-		input wire [31:0] in_Wi;
+		output [31:0] out_A, out_E;
+		output wire [31:0] out_B, out_C, out_D,
+			out_F, out_G, out_H;
 		
-		output [31:0] out_A;
-		output wire [31:0] out_B;
-		output wire [31:0] out_C;
-		output wire [31:0] out_D;
-		
-		output [31:0] out_E;
-		output wire [31:0] out_F;
-		output wire [31:0] out_G;
-		output wire [31:0] out_H;
-		
-		wire[31:0] wire_t1;
-		wire[31:0] wire_t2;
+		wire[31:0] wire_t1, wire_t2;
 		
 		assign out_H = in_G;
 		assign out_G = in_F;

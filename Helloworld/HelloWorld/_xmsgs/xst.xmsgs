@@ -5,5 +5,25 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-</messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\logic_module.v" Line 43: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
 
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\logic_module.v" Line 44: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\logic_module.v" Line 45: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\logic_module.v" Line 47: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\logic_module.v" Line 48: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="new" >"C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Helloworld\HelloWorld\logic_module.v" Line 49: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="Xst" num="1336" delta="new" > (*) More than 100% of Device resources are used
+</msg>
+
+</messages>

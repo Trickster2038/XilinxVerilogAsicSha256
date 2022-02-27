@@ -20,9 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module func_Ma(in_A, in_B, in_C, func);
 
-	input wire[31:0] in_A;
-	input wire[31:0] in_B;
-	input wire[31:0] in_C;
+	input wire[31:0] in_A, in_B, in_C;
 	output wire[31:0] func;
 	
 	assign func = (in_A & in_B) ^ (in_A & in_C) ^ (in_B & in_C);

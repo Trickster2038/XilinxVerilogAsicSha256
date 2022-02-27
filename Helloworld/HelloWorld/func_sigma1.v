@@ -24,9 +24,7 @@ module func_sigma1(in_E, func);
 	input wire[31:0] in_E;
 	output wire[31:0] func;
 	
-	wire[31:0] E6;
-	wire[31:0] E11;
-	wire[31:0] E25;
+	wire[31:0] E6, E11, E25;
 	
 	right_cyclic_shift #(6) 
 	E6_node( .out (E6), .num (in_E));

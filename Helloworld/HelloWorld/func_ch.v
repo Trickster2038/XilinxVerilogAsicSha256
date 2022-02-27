@@ -20,9 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 module func_ch(in_E, in_F, in_G, func);
 
-	input wire[31:0] in_E;
-	input wire[31:0] in_F;
-	input wire[31:0] in_G;
+	input wire[31:0] in_E, in_F, in_G;
 	output wire[31:0] func;
 	
 	assign func = (in_E & in_F) ^ ((~in_E) & in_G);

@@ -24,9 +24,7 @@ module func_sigma0(in_A, func);
 	input wire[31:0] in_A;
 	output wire[31:0] func;
 	
-	wire[31:0] A2;
-	wire[31:0] A13;
-	wire[31:0] A22;
+	wire[31:0] A2, A13, A22;
 	
 	right_cyclic_shift #(2) 
 	A2_node( .out (A2), .num (in_A));
