@@ -12,13 +12,13 @@
          <ClosedNode>/func_t2 C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|func_t2.v/s0 - func_sigma0</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>logical_module (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/logic_module.v)</SelectedItem>
+         <SelectedItem>memory_switch (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/memory_switch.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >12</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000183000000020000000000000000000000000200000064ffffffff000000810000000300000002000001830000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>logical_module (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/logic_module.v)</CurrentItem>
+      <CurrentItem>memory_switch (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/memory_switch.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -76,13 +76,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>View RTL Schematic</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e70000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>View RTL Schematic</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>
@@ -99,29 +99,33 @@
       <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000001930000012001000000060100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Automatic `includes</ClosedNode>
          <ClosedNode>/func_Ma_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|func_Ma_tb.v</ClosedNode>
+         <ClosedNode>/func_ch_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|func_ch_tb.v</ClosedNode>
          <ClosedNode>/func_sigma0_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|func_sigma0_tb.v</ClosedNode>
          <ClosedNode>/func_sigma1_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|func_sigma1_tb.v</ClosedNode>
-         <ClosedNode>/func_t2_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|func_t2_tb.v</ClosedNode>
+         <ClosedNode>/func_t1_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|func_t1_tb.v</ClosedNode>
+         <ClosedNode>/func_t2_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|func_t2_tb.v/uut - func_t2/s0 - func_sigma0</ClosedNode>
+         <ClosedNode>/k_generator_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|k_generator_tb.v</ClosedNode>
          <ClosedNode>/logic_module_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|logic_module_tb.v</ClosedNode>
          <ClosedNode>/register_32_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|register_32_tb.v</ClosedNode>
          <ClosedNode>/register_hash_32_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|register_hash_32_tb.v</ClosedNode>
          <ClosedNode>/right_cyclic_shift_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|right_cyclic_shift_tb.v</ClosedNode>
+         <ClosedNode>/round_memory_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|round_memory_tb.v</ClosedNode>
          <ClosedNode>/top_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Helloworld|HelloWorld|top_tb.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>logic_module_tb (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/logic_module_tb.v)</SelectedItem>
+         <SelectedItem>memory_switch_tb (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/memory_switch_tb.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >12</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >11</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000181000000020000000000000000000000000200000064ffffffff000000810000000300000002000001810000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000131000000020000000000000000000000000200000064ffffffff000000810000000300000002000001310000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>logic_module_tb (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/logic_module_tb.v)</CurrentItem>
+      <CurrentItem>memory_switch_tb (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Helloworld/HelloWorld/memory_switch_tb.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -129,13 +133,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
