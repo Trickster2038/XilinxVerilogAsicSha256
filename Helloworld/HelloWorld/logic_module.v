@@ -20,7 +20,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module logical_module
+module logic_module
 (in_A, in_B, in_C, in_D, 
 in_E, in_F, in_G, in_H,
 

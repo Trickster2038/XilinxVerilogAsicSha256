@@ -47,7 +47,7 @@ module logic_module_tb;
 	wire [31:0] out_H;
 
 	// Instantiate the Unit Under Test (UUT)
-	logical_module uut (
+	logic_module uut (
 		.in_A(in_A), 
 		.in_B(in_B), 
 		.in_C(in_C), 
