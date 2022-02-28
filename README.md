@@ -13,7 +13,7 @@
 
 ## Документация
 
-- [Документация (папка) [docs]](docs)
+- [Документация (папка) [docs]](docs) 
 
 - ["Карта реализации" [docs/implementation_map.pdf]](docs/implementation_map.pdf)
 
