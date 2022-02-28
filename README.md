@@ -21,6 +21,8 @@
 
 - [Временная диаграмма тестирования [docs/diagram.pdf]](docs/diagram.pdf)
 
+  > Данные для тестирования взяты из [статьи](https://habr.com/ru/post/258181/)
+
 - [Схема верхнего уровня [docs/asic_core_modules.pdf]](docs/asic_core_modules.pdf)
 
 - [Схема нижнего уровня [docs/asic_core_detailed.pdf]](docs/asic_core_detailed.pdf)
