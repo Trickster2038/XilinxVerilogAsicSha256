@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: main_block.prj
 
@@ -142,7 +142,7 @@ Elaborating module <mem_controller>.
 Elaborating module <output_buffer>.
 
 Elaborating module <k_generator>.
-WARNING:HDLCompiler:189 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic2\Asic\main_block.v" Line 59: Size mismatch in connection of port <k_out>. Formal port size is 32-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic2\Asic\main_block.v" Line 62: Size mismatch in connection of port <k_out>. Formal port size is 32-bit while actual signal size is 6-bit.
 
 Elaborating module <logic_module>.
 
@@ -169,7 +169,7 @@ Elaborating module <right_cyclic_shift(N=13)>.
 Elaborating module <right_cyclic_shift(N=22)>.
 
 Elaborating module <func_Ma>.
-WARNING:HDLCompiler:189 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic2\Asic\main_block.v" Line 66: Size mismatch in connection of port <in_Ki>. Formal port size is 32-bit while actual signal size is 6-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic2\Asic\main_block.v" Line 69: Size mismatch in connection of port <in_Ki>. Formal port size is 32-bit while actual signal size is 6-bit.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -197,15 +197,15 @@ Unit <mem_controller> synthesized.
 
 Synthesizing Unit <output_buffer>.
     Related source file is "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic2\Asic/output_buffer.v".
-    Found 32-bit register for signal <reg_B>.
-    Found 32-bit register for signal <reg_C>.
-    Found 32-bit register for signal <reg_D>.
-    Found 32-bit register for signal <reg_E>.
-    Found 32-bit register for signal <reg_F>.
-    Found 32-bit register for signal <reg_G>.
-    Found 32-bit register for signal <reg_H>.
+    Found 32-bit register for signal <out_B>.
+    Found 32-bit register for signal <out_C>.
+    Found 32-bit register for signal <out_D>.
+    Found 32-bit register for signal <out_E>.
+    Found 32-bit register for signal <out_F>.
+    Found 32-bit register for signal <out_G>.
+    Found 32-bit register for signal <out_H>.
     Found 32-bit register for signal <out_var>.
-    Found 32-bit register for signal <reg_A>.
+    Found 32-bit register for signal <out_A>.
     Summary:
 	inferred 288 D-type flip-flop(s).
 Unit <output_buffer> synthesized.
@@ -482,8 +482,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 6.602ns (Maximum Frequency: 151.474MHz)
-   Minimum input arrival time before clock: 5.085ns
+   Minimum period: 6.201ns (Maximum Frequency: 161.262MHz)
+   Minimum input arrival time before clock: 4.689ns
    Maximum output required time after clock: 0.640ns
    Maximum combinational path delay: No path found
 
@@ -493,20 +493,20 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 6.602ns (frequency: 151.474MHz)
-  Total number of paths / destination ports: 18987190 / 544
+  Clock period: 6.201ns (frequency: 161.262MHz)
+  Total number of paths / destination ports: 9494109 / 544
 -------------------------------------------------------------------------
-Delay:               6.602ns (Levels of Logic = 39)
+Delay:               6.201ns (Levels of Logic = 38)
   Source:            mem/out_E_11 (FF)
-  Destination:       mem/out_A_31 (FF)
+  Destination:       buff/out_A_31 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: mem/out_E_11 to mem/out_A_31
+  Data Path: mem/out_E_11 to buff/out_A_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               8   0.361   0.543  mem/out_E_11 (mem/out_E_11)
+     FD:C->Q               7   0.361   0.539  mem/out_E_11 (mem/out_E_11)
      LUT3:I0->O            1   0.097   0.379  logic_chip/t1/wire_sigma1<0>1 (logic_chip/t1/wire_sigma1<0>)
      LUT3:I1->O            1   0.097   0.295  logic_chip/ADDERTREE_INTERNAL_Madd1 (logic_chip/ADDERTREE_INTERNAL_Madd1)
      LUT4:I3->O            1   0.097   0.000  logic_chip/ADDERTREE_INTERNAL_Madd1_lut<0>1 (logic_chip/ADDERTREE_INTERNAL_Madd1_lut<0>1)
@@ -544,28 +544,27 @@ Delay:               6.602ns (Levels of Logic = 39)
      LUT3:I2->O            1   0.097   0.295  logic_chip/Madd_out_A29 (logic_chip/Madd_out_A29)
      LUT4:I3->O            1   0.097   0.000  logic_chip/Madd_out_A_lut<0>30 (logic_chip/Madd_out_A_lut<0>30)
      MUXCY:S->O            0   0.353   0.000  logic_chip/Madd_out_A_cy<0>_29 (logic_chip/Madd_out_A_cy<0>30)
-     XORCY:CI->O           2   0.370   0.299  logic_chip/Madd_out_A_xor<0>_30 (A2<31>)
-     LUT6:I5->O            1   0.097   0.000  mem/addr[3]_in_var[31]_select_10_OUT<31>1 (mem/addr[3]_in_var[31]_select_10_OUT<31>)
-     FD:D                      0.008          mem/out_A_31
+     XORCY:CI->O           1   0.370   0.000  logic_chip/Madd_out_A_xor<0>_30 (A2<31>)
+     FDE:D                     0.008          buff/out_A_31
     ----------------------------------------
-    Total                      6.602ns (3.889ns logic, 2.713ns route)
-                                       (58.9% logic, 41.1% route)
+    Total                      6.201ns (3.792ns logic, 2.409ns route)
+                                       (61.2% logic, 38.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 472795 / 608
+  Total number of paths / destination ports: 238319 / 608
 -------------------------------------------------------------------------
-Offset:              5.085ns (Levels of Logic = 38)
+Offset:              4.689ns (Levels of Logic = 37)
   Source:            k_num<3> (PAD)
-  Destination:       mem/out_A_31 (FF)
+  Destination:       buff/out_A_31 (FF)
   Destination Clock: clk rising
 
-  Data Path: k_num<3> to mem/out_A_31
+  Data Path: k_num<3> to buff/out_A_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             6   0.001   0.716  k_num_3_IBUF (k_num_3_IBUF)
-     LUT6:I0->O            2   0.097   0.516  k_gen/Mram_tmp_K12 (n0022<0>)
+     LUT6:I0->O            2   0.097   0.516  k_gen/Mram_tmp_K12 (n0030<0>)
      LUT3:I0->O            1   0.097   0.295  logic_chip/ADDERTREE_INTERNAL_Madd3 (logic_chip/ADDERTREE_INTERNAL_Madd3)
      LUT4:I3->O            1   0.097   0.000  logic_chip/ADDERTREE_INTERNAL_Madd3_lut<0>1 (logic_chip/ADDERTREE_INTERNAL_Madd3_lut<0>1)
      MUXCY:S->O            1   0.353   0.000  logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_0 (logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>1)
@@ -600,12 +599,11 @@ Offset:              5.085ns (Levels of Logic = 38)
      LUT3:I2->O            1   0.097   0.295  logic_chip/Madd_out_A29 (logic_chip/Madd_out_A29)
      LUT4:I3->O            1   0.097   0.000  logic_chip/Madd_out_A_lut<0>30 (logic_chip/Madd_out_A_lut<0>30)
      MUXCY:S->O            0   0.353   0.000  logic_chip/Madd_out_A_cy<0>_29 (logic_chip/Madd_out_A_cy<0>30)
-     XORCY:CI->O           2   0.370   0.299  logic_chip/Madd_out_A_xor<0>_30 (A2<31>)
-     LUT6:I5->O            1   0.097   0.000  mem/addr[3]_in_var[31]_select_10_OUT<31>1 (mem/addr[3]_in_var[31]_select_10_OUT<31>)
-     FD:D                      0.008          mem/out_A_31
+     XORCY:CI->O           1   0.370   0.000  logic_chip/Madd_out_A_xor<0>_30 (A2<31>)
+     FDE:D                     0.008          buff/out_A_31
     ----------------------------------------
-    Total                      5.085ns (2.658ns logic, 2.427ns route)
-                                       (52.3% logic, 47.7% route)
+    Total                      4.689ns (2.561ns logic, 2.128ns route)
+                                       (54.6% logic, 45.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -636,14 +634,14 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    6.602|         |         |         |
+clk            |    6.201|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 11.69 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.43 secs
  
 --> 
 

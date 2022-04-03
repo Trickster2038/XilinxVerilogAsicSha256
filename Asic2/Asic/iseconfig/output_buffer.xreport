@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-04-03T17:49:23</DateModified>
+  <DateModified>2022-04-03T19:01:04</DateModified>
   <ModuleName>main_block</ModuleName>
-  <SummaryTimeStamp>2022-04-03T17:39:22</SummaryTimeStamp>
+  <SummaryTimeStamp>2022-04-03T18:20:45</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/iseconfig/output_buffer.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic</ImplementationReportsDirectory>
   <DateInitialized>2022-04-03T17:49:23</DateInitialized>

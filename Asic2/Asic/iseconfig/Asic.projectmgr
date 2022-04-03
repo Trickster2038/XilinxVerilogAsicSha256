@@ -8,16 +8,22 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/asic_core C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
+         <ClosedNode>/asic_core C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v/logic_chip - logic_module</ClosedNode>
+         <ClosedNode>/func_sigma0 C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
+         <ClosedNode>/func_sigma1 C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
+         <ClosedNode>/func_t1 C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
+         <ClosedNode>/func_t2 C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
+         <ClosedNode>/logic_module C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
          <ClosedNode>/logic_module C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic|source|logic_module.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>output_buffer (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/output_buffer.v)</SelectedItem>
+         <SelectedItem>main_block (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/main_block.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >20</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000100000000020000000000000000000000000200000064ffffffff000000810000000300000002000001000000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001ca000000020000000000000000000000000200000064ffffffff000000810000000300000002000001ca0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>output_buffer (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/output_buffer.v)</CurrentItem>
+      <CurrentItem>main_block (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/main_block.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -33,7 +39,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Design Utilities</CurrentItem>
    </ItemView>
@@ -59,21 +65,26 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff00000000000000020000018d0000000001000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000000a0000000a501000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000d0000000010000000100000000000000000000000064ffffffff000000810000000000000001000000d00000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000016b000000010000000100000000000000000000000064ffffffff0000008100000000000000010000016b0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -82,16 +93,34 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/Automatic `includes</ClosedNode>
          <ClosedNode>/asic_core C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic|source|asic_core.v</ClosedNode>
+         <ClosedNode>/asic_core_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|asic_core_tb.v</ClosedNode>
+         <ClosedNode>/func_Ma_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|func_Ma_tb.v</ClosedNode>
+         <ClosedNode>/func_ch_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|func_ch_tb.v</ClosedNode>
+         <ClosedNode>/func_sigma0_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|func_sigma0_tb.v</ClosedNode>
+         <ClosedNode>/func_sigma1 C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
+         <ClosedNode>/func_sigma1_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|func_sigma1_tb.v</ClosedNode>
+         <ClosedNode>/func_t1 C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
+         <ClosedNode>/func_t1_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|func_t1_tb.v</ClosedNode>
+         <ClosedNode>/func_t2 C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
+         <ClosedNode>/func_t2_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|func_t2_tb.v</ClosedNode>
+         <ClosedNode>/k_generator_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|k_generator_tb.v</ClosedNode>
+         <ClosedNode>/logic_module C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|source|asic_core.v</ClosedNode>
          <ClosedNode>/logic_module C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic|source|asic_core.v</ClosedNode>
+         <ClosedNode>/logic_module_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|logic_module_tb.v</ClosedNode>
+         <ClosedNode>/main_block_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|Asic|main_block_tb.v/uut - main_block/logic_chip - logic_module</ClosedNode>
+         <ClosedNode>/mem_controller_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|Asic|mem_controller_tb.v</ClosedNode>
+         <ClosedNode>/memory_switch_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|memory_switch_tb.v</ClosedNode>
+         <ClosedNode>/output_buffer_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|Asic|output_buffer_tb.v</ClosedNode>
+         <ClosedNode>/right_cyclic_shift_tb C:|Users|Professional|Desktop|XilinxVerilogAsicSha256|Asic2|testbench|right_cyclic_shift_tb.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>asic_core_tb (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic/testbench/asic_core_tb.v)</SelectedItem>
+         <SelectedItem>main_block_tb (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/main_block_tb.v)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >9</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001de000000020000000000000000000000000200000064ffffffff000000810000000300000002000001de0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000018e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000018e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>asic_core_tb (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic/testbench/asic_core_tb.v)</CurrentItem>
+      <CurrentItem>main_block_tb (C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/main_block_tb.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -99,25 +128,25 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000018f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000018f0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000e1000000010000000100000000000000000000000064ffffffff000000810000000000000001000000e10000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Behavioral Check Syntax</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017e0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017c0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Behavioral Check Syntax</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
 </Project>

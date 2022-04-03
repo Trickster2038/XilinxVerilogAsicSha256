@@ -1,3 +1,5 @@
+`ifndef KGEN
+`define KGEN
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
@@ -96,3 +98,5 @@ module k_generator(round_n,k_out);
 	end 
 
 endmodule
+
+`endif

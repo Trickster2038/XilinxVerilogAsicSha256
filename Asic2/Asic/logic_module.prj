@@ -1,3 +1,0 @@
-verilog work "../source/logic/func_t2.v"
-verilog work "../source/logic/func_t1.v"
-verilog work "../source/logic_module.v"

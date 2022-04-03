@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-04-03T17:34:47</DateModified>
-  <ModuleName>output_buffer</ModuleName>
-  <SummaryTimeStamp>2022-04-03T17:33:01</SummaryTimeStamp>
+  <DateModified>2022-04-03T19:19:41</DateModified>
+  <ModuleName>main_block</ModuleName>
+  <SummaryTimeStamp>2022-04-03T19:18:47</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/iseconfig/main_block.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic\</ImplementationReportsDirectory>
   <DateInitialized>2022-04-03T17:34:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
