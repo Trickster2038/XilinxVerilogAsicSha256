@@ -1,0 +1,3 @@
+verilog isim_temp "output_buffer.v"
+verilog isim_temp "output_buffer_tb.v"
+verilog isim_temp "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -37,17 +37,6 @@ module mem_controller(
 	
 	always @(posedge clk) begin
 		case(addr)
-		00: begin
-				out_A <= in_A;
-				out_B <= in_B;
-				out_C <= in_C;
-				out_D <= in_D;
-				
-				out_E <= in_E;
-				out_F <= in_F;
-				out_G <= in_G;
-				out_H <= in_H;
-			end
 		01: out_A <= in_var;
 		02: out_B <= in_var;
 		03: out_C <= in_var;

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/output_buffer.xst" -ofn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic2/Asic/output_buffer.syr" 
