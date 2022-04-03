@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: mem_controller.prj
 
@@ -130,7 +130,7 @@ Synthesizing Unit <mem_controller>.
     Found 32-bit register for signal <out_A>.
     Summary:
 	inferred 256 D-type flip-flop(s).
-	inferred   8 Multiplexer(s).
+	inferred  14 Multiplexer(s).
 Unit <mem_controller> synthesized.
 
 =========================================================================
@@ -139,8 +139,8 @@ HDL Synthesis Report
 Macro Statistics
 # Registers                                            : 8
  32-bit register                                       : 8
-# Multiplexers                                         : 8
- 32-bit 2-to-1 multiplexer                             : 8
+# Multiplexers                                         : 14
+ 32-bit 2-to-1 multiplexer                             : 14
 
 =========================================================================
 
@@ -155,8 +155,8 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Registers                                            : 256
  Flip-Flops                                            : 256
-# Multiplexers                                         : 8
- 32-bit 2-to-1 multiplexer                             : 8
+# Multiplexers                                         : 14
+ 32-bit 2-to-1 multiplexer                             : 14
 
 =========================================================================
 
@@ -200,10 +200,9 @@ Top Level Output File Name         : mem_controller.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 264
-#      LUT3                        : 100
-#      LUT4                        : 4
-#      LUT6                        : 160
+# BELS                             : 232
+#      LUT3                        : 3
+#      LUT4                        : 229
 # FlipFlops/Latches                : 256
 #      FDE                         : 256
 # Clock Buffers                    : 1
@@ -219,14 +218,14 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                  264  out of  63400     0%  
-    Number used as Logic:               264  out of  63400     0%  
+ Number of Slice LUTs:                  232  out of  63400     0%  
+    Number used as Logic:               232  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    264
-   Number with an unused Flip Flop:     264  out of    264   100%  
-   Number with an unused LUT:             0  out of    264     0%  
-   Number of fully used LUT-FF pairs:     0  out of    264     0%  
+ Number of LUT Flip Flop pairs used:    232
+   Number with an unused Flip Flop:     232  out of    232   100%  
+   Number with an unused LUT:             0  out of    232     0%  
+   Number of fully used LUT-FF pairs:     0  out of    232     0%  
    Number of unique control sets:         8
 
 IO Utilization: 
@@ -282,20 +281,20 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 2144 / 512
+  Total number of paths / destination ports: 1856 / 512
 -------------------------------------------------------------------------
 Offset:              1.273ns (Levels of Logic = 2)
-  Source:            addr<1> (PAD)
-  Destination:       out_E_0 (FF)
+  Source:            addr<3> (PAD)
+  Destination:       out_H_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: addr<1> to out_E_0
+  Data Path: addr<3> to out_H_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O           231   0.001   0.694  addr_1_IBUF (addr_1_IBUF)
-     LUT4:I0->O           32   0.097   0.386  _n0120_inv1 (_n0120_inv)
-     FDE:CE                    0.095          out_E_0
+     IBUF:I->O           232   0.001   0.694  addr_3_IBUF (addr_3_IBUF)
+     LUT4:I0->O           32   0.097   0.386  n0007_inv1 (n0007_inv)
+     FDE:CE                    0.095          out_H_0
     ----------------------------------------
     Total                      1.273ns (0.193ns logic, 1.080ns route)
                                        (15.2% logic, 84.8% route)
@@ -328,11 +327,11 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 10.41 secs
+Total CPU time to Xst completion: 9.81 secs
  
 --> 
 
-Total memory usage is 4617432 kilobytes
+Total memory usage is 4601716 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
