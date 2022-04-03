@@ -1,0 +1,10 @@
+Command line:
+   mem_controller_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49950
+
+Sun Apr 03 15:25:52 2022
+
+
+ Elaboration Time: 0.0625 sec
