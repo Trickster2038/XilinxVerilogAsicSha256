@@ -1,0 +1,41 @@
+ISim log file
+Running: C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_2\Asic\asic2_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic_2/Asic/asic2_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+In mem A, H: xxxxxxxx xxxxxxxx
+[?] Out mem A, B: xxxxxxxx xxxxxxxx
+In mem A, H: xxxxxxxx xxxxxxxx
+[?] Out mem A, B: xxxxxxxx xxxxxxxx
+[v] Out mem A, B: xxxxxxxx xxxxxxxx
+In mem A, H: xxxxxxxx xxxxxxxx
+[?] Out mem A, B: xxxxxxxx xxxxxxxx
+In mem A, H: 6a09e667 xxxxxxxx
+[?] Out mem A, B: xxxxxxxx 6a09e667
+# run all
+In mem A, H: 6a09e667 xxxxxxxx
+[?] Out mem A, B: xxxxxxxx 6a09e667
+In mem A, H: 6a09e667 xxxxxxxx
+[?] Out mem A, B: xxxxxxxx 6a09e667
+In mem A, H: 6a09e667 xxxxxxxx
+[?] Out mem A, B: xxxxxxxx 6a09e667
+In mem A, H: 6a09e667 xxxxxxxx
+[?] Out mem A, B: xxxxxxxx 6a09e667
+In mem A, H: 6a09e667 xxxxxxxx
+[?] Out mem A, B: xxxxxxxx 6a09e667
+In mem A, H: 6a09e667 xxxxxxxx
+[?] Out mem A, B: xxxxxxxx 6a09e667
+In mem A, H: 6a09e667 5be0cd19
+[?] Out mem A, B: 0e38884d 6a09e667
+[v] Out mem A, B: 0e38884d 6a09e667
+In mem A, H: xxxxxxxx xxxxxxxx
+[?] Out mem A, B: xxxxxxxx xxxxxxxx
+In mem A, H: 0e38884d 1f83d9ab
+[?] Out mem A, B: 384539c8 0e38884d
+In mem A, H: 0e38884d 1f83d9ab
+[?] Out mem A, B: 384539c8 0e38884d
