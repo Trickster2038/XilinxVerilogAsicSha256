@@ -19,6 +19,7 @@
 - ["Карта реализации" [docs/implementation_map.pdf]](docs/implementation_map.pdf)
 
   > Цветом выделены реализованные различными модулями части алгоритма SHA-256
+  >
   > NOTE: некоторые пометки могли устареть
 
 - [Временная диаграмма тестирования всей схемы [docs2/time_diagram_full.pdf]](docs2/time_diagram_full.pdf)
