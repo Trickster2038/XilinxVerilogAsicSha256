@@ -143,17 +143,30 @@ module main_block_tb2;
 		clk = 0;
 		#100;
 		
-		// output
+		// output A
+		in_var = 0;
 		mem_out_addr = 1;
+		mem_in_addr = 0;
 		en_mem_out = 1;
 		clk = 1;
 		#100;
+		
 		clk = 0;
+		en_mem_out = 1;
+		
 		#100;
 		clk = 1;
 		#100;
 		clk = 0;
+	
+		
+		// output B
+		mem_out_addr = 2;
 		#100;
+		clk = 1;
+		#100;
+		clk = 0;
+		#300;
 
 	end
       
