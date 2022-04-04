@@ -41,7 +41,12 @@ module output_buffer(
 		in_E, in_F, in_G, in_H;
 	
 	always @(posedge clk) begin
+	$display("[?] Out mem A, B: %h %h", 
+		in_A, in_B);
+
 		if (en) begin
+			$display("[v] Out mem A, B: %h %h", 
+				in_A, in_B);
 			out_A <= in_A;
 			out_B <= in_B;
 			out_C <= in_C;

@@ -36,6 +36,8 @@ module mem_controller(
 		out_E, out_F, out_G, out_H;
 	
 	always @(posedge clk) begin
+		$display("In mem A, H: %h %h", 
+			out_A, out_H);
 		case(addr)
 		01: out_A <= in_var;
 		02: out_B <= in_var;
