@@ -10,7 +10,7 @@
 - [Генератор констант [Asic_2/source/k_generator.v]](Asic_2/source/k_generator.v)
 - [Память - входной буфер [Asic_2/source/mem_controller.v]](Asic_2/source/mem_controller.v)
 - [Память - выходной буфер [Asic_2/source/output_buffer.v]](Asic_2/source/output_buffer.v)
-- [Управляющее устройство[Asic_2/source/control_block.v]](Asic_2/source/control_block.v)
+- [Управляющее устройство [Asic_2/source/control_block.v]](Asic_2/source/control_block.v)
 - [Тесты (папка) [Asic_2/testbench]](Asic_2/testbench)
 
 ## Документация
