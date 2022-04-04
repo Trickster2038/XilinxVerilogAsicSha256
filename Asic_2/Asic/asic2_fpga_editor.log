@@ -1,0 +1,100 @@
+#:C39    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_2\Asic
+#Date/Time:
+#:T   Mon Apr 04 15:53:07 2022
+#------------------------------
+	#Reading asic2.ncd...
+	#Loading device for application Rf_Device from file '7a100t.nph' in environment E:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "asic2" is an NCD, version 3.2, device xc7a100t, package csg324, speed -3
+	#Design creation date: 2022.04.04.12.51.53
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select site 'TIEOFF_X42Y120'
+	#site "TIEOFF_X42Y120",  type = TIEOFF  (RPM grid X164Y240)
+	#4
+setattr main  disable_draw true
+	#5
+setattr layer * color GREY fill HOLLOW
+	#6
+setattr layer long_lines  color MAGENTA
+	#7
+setattr layer pinwires color DARK_GREEN
+	#8
+setattr layer clock_regions color BLACK fill SOLID
+	#9
+setattr layer components color BLUE fill SOLID
+	#10
+setattr layer ratsnests color GREEN fill SOLID
+	#11
+setattr layer routes color CYAN fill SOLID
+	#12
+setattr layer hilite color YELLOW
+	#13
+setattr layer select color RED
+	#14
+setattr layer text color BLACK
+	#15
+setattr layer block_prim color BLACK
+	#16
+setattr layer block_wire color MAGENTA
+	#17
+setattr layer block_config color CYAN
+	#18
+setattr layer block_name color GREEN
+	#19
+setattr layer hard_macros color GREY fill SOLID
+	#20
+setattr layer user_rpms color CYAN fill SOLID
+	#21
+setattr layer tool_rpms color MAGENTA fill SOLID
+	#22
+setattr main disable_draw false
+	#23
+setattr main  disable_draw true
+	#24
+setattr layer * color GREY fill HOLLOW
+	#25
+setattr layer long_lines  color MAGENTA
+	#26
+setattr layer pinwires color DARK_GREEN
+	#27
+setattr layer clock_regions color BLACK fill SOLID
+	#28
+setattr layer components color BLUE fill SOLID
+	#29
+setattr layer ratsnests color GREEN fill SOLID
+	#30
+setattr layer routes color CYAN fill SOLID
+	#31
+setattr layer hilite color YELLOW
+	#32
+setattr layer select color RED
+	#33
+setattr layer text color WHITE
+	#34
+setattr layer block_prim color WHITE
+	#35
+setattr layer block_wire color MAGENTA
+	#36
+setattr layer block_config color CYAN
+	#37
+setattr layer block_name color GREEN
+	#38
+setattr layer hard_macros color GREY fill SOLID
+	#39
+setattr layer user_rpms color CYAN fill SOLID
+	#40
+setattr layer tool_rpms color MAGENTA fill SOLID
+	#41
+setattr main disable_draw false
+	#42
+unselect -all
