@@ -19,14 +19,51 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module control_block(
-	cnt
+	cnt, reset, in_mem_addr, k_num,
+	out_mem_addr, en_mem_out
     );
 	
 	// 8+1+8
 	
 	input wire cnt;
+	input wire reset;
+	output reg [3:0] in_mem_addr;
+	output reg [3:0] out_mem_addr;
+	output reg [5:0] k_num;
+	output reg en_mem_out;
 	reg [5:0] n;
+	reg [5:0] n_buf;
 	
-	
+	always @(posedge cnt or posedge reset) begin
+		if (reset == 1) begin
+			n <= 0;
+			n_buf <= 0;
+		end
+		else begin 
+			if (cnt == 1) begin
+				n <= n + 1;
+				if (n%9 != 0)
+				 n_buf <= n_buf + 1;
+			end
+			
+			k_num = n/19;
+			out_mem_addr <= n_buf%8 + 1;
+			
+			if (n%9 == 0)
+				en_mem_out <= 1;
+			else
+				en_mem_out <= 0;
+			
+			if (n > 0)
+			begin
+				if (n < 9)
+					in_mem_addr <= n;
+				else
+					in_mem_addr <= 0; 
+			end
+			else 
+				in_mem_addr <= 0;			
+		end
+	end
 
 endmodule
