@@ -1,0 +1,14 @@
+MO asic2 NULL ../source/asic2.v vlg5A/asic2.bin 1650300436
+MO func_t1 NULL ../source/func_t1.v vlg70/func__t1.bin 1650300436
+MO func_t2 NULL ../source/func_t2.v vlg71/func__t2.bin 1650300436
+MO control_block NULL ../source/control_block.v vlg43/control__block.bin 1650300436
+MO func_Ma NULL ../source/func_Ma.v vlg5D/func___ma.bin 1650300436
+MO right_cyclic_shift NULL ../source/right_cyclic_shift.v vlg55/right__cyclic__shift.bin 1650300436
+MO logic_module NULL ../source/logic_module.v vlg2F/logic__module.bin 1650300436
+MO k_generator NULL ../source/k_generator.v vlg3D/k__generator.bin 1650300436
+MO main_block NULL ../source/main_block.v vlg6F/main__block.bin 1650300436
+MO func_sigma0 NULL ../source/func_sigma0.v vlg78/func__sigma0.bin 1650300436
+MO func_sigma1 NULL ../source/func_sigma1.v vlg79/func__sigma1.bin 1650300436
+MO mem_controller NULL ../source/mem_controller.v vlg3A/mem__controller.bin 1650300436
+MO output_buffer NULL ../source/output_buffer.v vlg52/output__buffer.bin 1650300436
+MO func_ch NULL ../source/func_ch.v vlg52/func__ch.bin 1650300436

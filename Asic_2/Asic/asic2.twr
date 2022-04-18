@@ -3,7 +3,7 @@ Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 E:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
--n 3 -fastpaths -xml asic2.twx asic2.ncd -o asic2.twr asic2.pcf
+-n 3 -fastpaths -xml asic2.twx asic2.ncd -o asic2.twr asic2.pcf -ucf asic2.ucf
 
 Design file:              asic2.ncd
 Physical constraint file: asic2.pcf
@@ -151,14 +151,14 @@ clk            |    7.838|    0.438|         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Apr 04 15:53:02 2022 
+Analysis completed Mon Apr 18 20:02:39 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 5018 MB
+Peak Memory Usage: 5019 MB
 
 
 

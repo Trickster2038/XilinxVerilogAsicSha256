@@ -3,3 +3,16 @@ ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 asic2.ngc 
 map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o asic2_map.ncd asic2.ngd asic2.pcf 
 par -w -intstyle ise -ol high -mt off asic2_map.ncd asic2.ncd asic2.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml asic2.twx asic2.ncd -o asic2.twr asic2.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc asic2.ucf -p xc7a100t-csg324-3 asic2.ngc asic2.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o asic2_map.ncd asic2.ngd asic2.pcf 
+par -w -intstyle ise -ol high -mt off asic2_map.ncd asic2.ncd asic2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml asic2.twx asic2.ncd -o asic2.twr asic2.pcf -ucf asic2.ucf 
+xpwr -intstyle ise -ol std asic2.ncd asic2.pcf -o asic2.pwr 
+xst -intstyle ise -ifn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic_2/Asic/asic2.xst" -ofn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic_2/Asic/asic2.syr" 
+xst -intstyle ise -ifn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic_2/Asic/asic2.xst" -ofn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic_2/Asic/asic2.syr" 
+xst -intstyle ise -ifn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic_2/Asic/asic2.xst" -ofn "C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic_2/Asic/asic2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc asic2.ucf -p xc7a100t-csg324-3 asic2.ngc asic2.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o asic2_map.ncd asic2.ngd asic2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml asic2_preroute.twx asic2_map.ncd -o asic2_preroute.twr asic2.pcf -ucf main_block.ucf -ucf asic2.ucf 
+par -w -intstyle ise -ol high -mt off asic2_map.ncd asic2.ncd asic2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml asic2.twx asic2.ncd -o asic2.twr asic2.pcf -ucf asic2.ucf 
