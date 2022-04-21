@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: asic2.prj
 
@@ -133,6 +133,8 @@ Parsing module <logic_module>.
 Parsing module <main_block>.
 Parsing verilog file "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/control_block.v" included at line 3.
 Parsing module <control_block>.
+Parsing verilog file "input_mux.v" included at line 4.
+Parsing module <input_mux>.
 Parsing module <asic2>.
 
 =========================================================================
@@ -141,10 +143,12 @@ Parsing module <asic2>.
 
 Elaborating module <asic2>.
 
+Elaborating module <input_mux>.
+
 Elaborating module <main_block>.
 
 Elaborating module <mem_controller>.
-"C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/mem_controller.v" Line 40. $display In mem A, H: 0 0
+"C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/mem_controller.v" Line 41. $display In mem A, H: 0 0
 
 Elaborating module <output_buffer>.
 "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/output_buffer.v" Line 45. $display [?] Out mem A, B: 0 0
@@ -179,10 +183,10 @@ Elaborating module <right_cyclic_shift(N=22)>.
 Elaborating module <func_Ma>.
 
 Elaborating module <control_block>.
-WARNING:HDLCompiler:413 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/control_block.v" Line 44: Result of 12-bit expression is truncated to fit in 11-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/control_block.v" Line 47: Result of 12-bit expression is truncated to fit in 11-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/control_block.v" Line 50: Result of 11-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/control_block.v" Line 61: Result of 11-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/control_block.v" Line 45: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/control_block.v" Line 48: Result of 12-bit expression is truncated to fit in 11-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/control_block.v" Line 51: Result of 11-bit expression is truncated to fit in 6-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/control_block.v" Line 67: Result of 11-bit expression is truncated to fit in 4-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -193,6 +197,76 @@ Synthesizing Unit <asic2>.
     Summary:
 	no macro.
 Unit <asic2> synthesized.
+
+Synthesizing Unit <input_mux>.
+    Related source file is "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\Asic/input_mux.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_var<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <out_w<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  64 Latch(s).
+Unit <input_mux> synthesized.
 
 Synthesizing Unit <main_block>.
     Related source file is "C:\Users\Professional\Desktop\XilinxVerilogAsicSha256\Asic_3\source\/main_block.v".
@@ -337,44 +411,45 @@ Synthesizing Unit <control_block>.
     Found 11-bit register for signal <n>.
     Found 6-bit register for signal <k_num>.
     Found 4-bit register for signal <out_mem_addr>.
+    Found 1-bit register for signal <en_mem_in>.
     Found 1-bit register for signal <en_mem_out>.
     Found 4-bit register for signal <in_mem_addr>.
-    Found 11-bit adder for signal <n[10]_GND_19_o_add_2_OUT> created at line 44.
-    Found 11-bit adder for signal <n_buf[10]_GND_19_o_add_7_OUT> created at line 47.
-    Found 4-bit adder for signal <n0054> created at line 51.
-    Found 11-bit comparator lessequal for signal <n[10]_GND_19_o_LessThan_18_o> created at line 60
+    Found 11-bit adder for signal <n[10]_GND_84_o_add_2_OUT> created at line 45.
+    Found 11-bit adder for signal <n_buf[10]_GND_84_o_add_7_OUT> created at line 48.
+    Found 4-bit adder for signal <n0059> created at line 52.
+    Found 11-bit comparator lessequal for signal <n[10]_GND_84_o_LessThan_19_o> created at line 66
     Summary:
 	inferred   3 Adder/Subtractor(s).
-	inferred  37 D-type flip-flop(s).
+	inferred  38 D-type flip-flop(s).
 	inferred   1 Comparator(s).
 Unit <control_block> synthesized.
 
 Synthesizing Unit <mod_11u_4u>.
     Related source file is "".
     Found 15-bit adder for signal <n0385> created at line 0.
-    Found 15-bit adder for signal <GND_20_o_b[3]_add_1_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_85_o_b[3]_add_1_OUT> created at line 0.
     Found 14-bit adder for signal <n0389> created at line 0.
-    Found 14-bit adder for signal <GND_20_o_b[3]_add_3_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_85_o_b[3]_add_3_OUT> created at line 0.
     Found 13-bit adder for signal <n0393> created at line 0.
-    Found 13-bit adder for signal <GND_20_o_b[3]_add_5_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_85_o_b[3]_add_5_OUT> created at line 0.
     Found 12-bit adder for signal <n0397> created at line 0.
-    Found 12-bit adder for signal <GND_20_o_b[3]_add_7_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_85_o_b[3]_add_7_OUT> created at line 0.
     Found 11-bit adder for signal <n0401> created at line 0.
     Found 11-bit adder for signal <a[10]_b[3]_add_9_OUT> created at line 0.
     Found 11-bit adder for signal <n0405> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_20_o_add_11_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_85_o_add_11_OUT> created at line 0.
     Found 11-bit adder for signal <n0409> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_20_o_add_13_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_85_o_add_13_OUT> created at line 0.
     Found 11-bit adder for signal <n0413> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_20_o_add_15_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_85_o_add_15_OUT> created at line 0.
     Found 11-bit adder for signal <n0417> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_20_o_add_17_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_85_o_add_17_OUT> created at line 0.
     Found 11-bit adder for signal <n0421> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_20_o_add_19_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_85_o_add_19_OUT> created at line 0.
     Found 11-bit adder for signal <n0425> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_20_o_add_21_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_85_o_add_21_OUT> created at line 0.
     Found 11-bit adder for signal <n0429> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_20_o_add_23_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_85_o_add_23_OUT> created at line 0.
     Found 15-bit comparator lessequal for signal <BUS_0001> created at line 0
     Found 14-bit comparator lessequal for signal <BUS_0002> created at line 0
     Found 13-bit comparator lessequal for signal <BUS_0003> created at line 0
@@ -395,17 +470,17 @@ Unit <mod_11u_4u> synthesized.
 
 Synthesizing Unit <div_11u_5u>.
     Related source file is "".
-    Found 16-bit adder for signal <GND_21_o_b[4]_add_1_OUT> created at line 0.
-    Found 15-bit adder for signal <GND_21_o_b[4]_add_3_OUT> created at line 0.
-    Found 14-bit adder for signal <GND_21_o_b[4]_add_5_OUT> created at line 0.
-    Found 13-bit adder for signal <GND_21_o_b[4]_add_7_OUT> created at line 0.
-    Found 12-bit adder for signal <GND_21_o_b[4]_add_9_OUT> created at line 0.
+    Found 16-bit adder for signal <GND_86_o_b[4]_add_1_OUT> created at line 0.
+    Found 15-bit adder for signal <GND_86_o_b[4]_add_3_OUT> created at line 0.
+    Found 14-bit adder for signal <GND_86_o_b[4]_add_5_OUT> created at line 0.
+    Found 13-bit adder for signal <GND_86_o_b[4]_add_7_OUT> created at line 0.
+    Found 12-bit adder for signal <GND_86_o_b[4]_add_9_OUT> created at line 0.
     Found 11-bit adder for signal <a[10]_b[4]_add_11_OUT> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_21_o_add_13_OUT> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_21_o_add_15_OUT> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_21_o_add_17_OUT[10:0]> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_21_o_add_19_OUT[10:0]> created at line 0.
-    Found 11-bit adder for signal <a[10]_GND_21_o_add_21_OUT[10:0]> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_86_o_add_13_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_86_o_add_15_OUT> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_86_o_add_17_OUT[10:0]> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_86_o_add_19_OUT[10:0]> created at line 0.
+    Found 11-bit adder for signal <a[10]_GND_86_o_add_21_OUT[10:0]> created at line 0.
     Found 16-bit comparator lessequal for signal <BUS_0001> created at line 0
     Found 15-bit comparator lessequal for signal <BUS_0002> created at line 0
     Found 14-bit comparator lessequal for signal <BUS_0003> created at line 0
@@ -439,12 +514,14 @@ Macro Statistics
  16-bit adder                                          : 1
  32-bit adder                                          : 7
  4-bit adder                                           : 1
-# Registers                                            : 31
- 1-bit register                                        : 1
+# Registers                                            : 32
+ 1-bit register                                        : 2
  11-bit register                                       : 2
  32-bit register                                       : 25
  4-bit register                                        : 2
  6-bit register                                        : 1
+# Latches                                              : 64
+ 1-bit latch                                           : 64
 # Comparators                                          : 37
  11-bit comparator lessequal                           : 24
  12-bit comparator lessequal                           : 3
@@ -762,8 +839,8 @@ Macro Statistics
  32-bit / 5-inputs adder tree                          : 1
 # Counters                                             : 2
  11-bit up counter                                     : 2
-# Registers                                            : 815
- Flip-Flops                                            : 815
+# Registers                                            : 816
+ Flip-Flops                                            : 816
 # Comparators                                          : 37
  11-bit comparator lessequal                           : 24
  12-bit comparator lessequal                           : 3
@@ -1050,6 +1127,8 @@ WARNING:Xst:2677 - Node <n_buf_10> of sequential type is unconnected in block <c
 
 Optimizing unit <asic2> ...
 
+Optimizing unit <input_mux> ...
+
 Optimizing unit <mem_controller> ...
 
 Optimizing unit <logic_module> ...
@@ -1070,8 +1149,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 573
- Flip-Flops                                            : 573
+# Registers                                            : 574
+ Flip-Flops                                            : 574
 
 =========================================================================
 
@@ -1098,24 +1177,26 @@ Primitive and Black Box Usage:
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 12
-#      LUT2                        : 33
-#      LUT3                        : 230
-#      LUT4                        : 117
-#      LUT5                        : 21
-#      LUT6                        : 442
+#      LUT2                        : 34
+#      LUT3                        : 227
+#      LUT4                        : 115
+#      LUT5                        : 27
+#      LUT6                        : 440
 #      MUXCY                       : 136
 #      MUXF7                       : 3
 #      VCC                         : 1
 #      XORCY                       : 142
-# FlipFlops/Latches                : 573
-#      FD                          : 288
+# FlipFlops/Latches                : 638
+#      FD                          : 32
 #      FDCE                        : 14
-#      FDE                         : 267
+#      FDE                         : 524
 #      FDRE                        : 4
-# Clock Buffers                    : 1
-#      BUFG                        : 1
-# IO Buffers                       : 98
-#      IBUF                        : 66
+#      LD                          : 32
+#      LD_1                        : 32
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 66
+#      IBUF                        : 34
 #      OBUF                        : 32
 
 Device utilization summary:
@@ -1125,23 +1206,23 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:             573  out of  126800     0%  
+ Number of Slice Registers:             638  out of  126800     0%  
  Number of Slice LUTs:                  859  out of  63400     1%  
     Number used as Logic:               859  out of  63400     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   1173
-   Number with an unused Flip Flop:     600  out of   1173    51%  
-   Number with an unused LUT:           314  out of   1173    26%  
-   Number of fully used LUT-FF pairs:   259  out of   1173    22%  
-   Number of unique control sets:         6
+ Number of LUT Flip Flop pairs used:   1236
+   Number with an unused Flip Flop:     598  out of   1236    48%  
+   Number with an unused LUT:           377  out of   1236    30%  
+   Number of fully used LUT-FF pairs:   261  out of   1236    21%  
+   Number of unique control sets:         8
 
 IO Utilization: 
- Number of IOs:                          98
- Number of bonded IOBs:                  98  out of    210    46%  
+ Number of IOs:                          66
+ Number of bonded IOBs:                  66  out of    210    31%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1161,11 +1242,15 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-clk                                | IBUF+BUFG              | 573   |
------------------------------------+------------------------+-------+
+------------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                      | Clock buffer(FF name)  | Load  |
+------------------------------------------------------------------+------------------------+-------+
+mux/GND_2_o_GND_2_o_equal_1_o(mux/GND_2_o_GND_2_o_equal_1_o<3>1:O)| BUFG(*)(mux/out_w_31)  | 64    |
+clk                                                               | IBUF+BUFG              | 574   |
+------------------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -1176,7 +1261,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 6.201ns (Maximum Frequency: 161.262MHz)
-   Minimum input arrival time before clock: 3.743ns
+   Minimum input arrival time before clock: 1.492ns
    Maximum output required time after clock: 0.645ns
    Maximum combinational path delay: No path found
 
@@ -1187,7 +1272,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 6.201ns (frequency: 161.262MHz)
-  Total number of paths / destination ports: 9870371 / 836
+  Total number of paths / destination ports: 9870343 / 1093
 -------------------------------------------------------------------------
 Delay:               6.201ns (Levels of Logic = 38)
   Source:            core/mem/out_E_11 (FF)
@@ -1199,7 +1284,7 @@ Delay:               6.201ns (Levels of Logic = 38)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               7   0.361   0.539  core/mem/out_E_11 (core/mem/out_E_11)
+     FDE:C->Q              7   0.361   0.539  core/mem/out_E_11 (core/mem/out_E_11)
      LUT3:I0->O            1   0.097   0.379  core/logic_chip/t1/wire_sigma1<0>1 (core/logic_chip/t1/wire_sigma1<0>)
      LUT3:I1->O            1   0.097   0.295  core/logic_chip/ADDERTREE_INTERNAL_Madd1 (core/logic_chip/ADDERTREE_INTERNAL_Madd1)
      LUT4:I3->O            1   0.097   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd1_lut<0>1 (core/logic_chip/ADDERTREE_INTERNAL_Madd1_lut<0>1)
@@ -1244,58 +1329,43 @@ Delay:               6.201ns (Levels of Logic = 38)
                                        (61.2% logic, 38.8% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 61529 / 367
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mux/GND_2_o_GND_2_o_equal_1_o'
+  Total number of paths / destination ports: 64 / 64
 -------------------------------------------------------------------------
-Offset:              3.743ns (Levels of Logic = 36)
-  Source:            in_w<0> (PAD)
-  Destination:       core/buff/reg_A_31 (FF)
-  Destination Clock: clk rising
+Offset:              0.284ns (Levels of Logic = 1)
+  Source:            in_data<31> (PAD)
+  Destination:       mux/out_w_31 (LATCH)
+  Destination Clock: mux/GND_2_o_GND_2_o_equal_1_o falling
 
-  Data Path: in_w<0> to core/buff/reg_A_31
+  Data Path: in_data<31> to mux/out_w_31
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   0.001   0.383  in_w_0_IBUF (in_w_0_IBUF)
-     LUT3:I1->O            1   0.097   0.295  core/logic_chip/ADDERTREE_INTERNAL_Madd3 (core/logic_chip/ADDERTREE_INTERNAL_Madd3)
-     LUT4:I3->O            1   0.097   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_lut<0>1 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_lut<0>1)
-     MUXCY:S->O            1   0.353   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_0 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>1)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_1 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>2)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_2 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>3)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_3 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>4)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_4 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>5)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_5 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>6)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_6 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>7)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_7 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>8)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_8 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>9)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_9 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>10)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_10 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>11)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_11 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>12)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_12 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>13)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_13 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>14)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_14 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>15)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_15 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>16)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_16 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>17)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_17 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>18)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_18 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>19)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_19 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>20)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_20 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>21)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_21 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>22)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_22 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>23)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_23 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>24)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_24 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>25)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_25 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>26)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_26 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>27)
-     MUXCY:CI->O           1   0.023   0.000  core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>_27 (core/logic_chip/ADDERTREE_INTERNAL_Madd3_cy<0>28)
-     XORCY:CI->O           3   0.370   0.305  core/logic_chip/ADDERTREE_INTERNAL_Madd3_xor<0>_28 (core/logic_chip/ADDERTREE_INTERNAL_Madd_293)
-     LUT3:I2->O            1   0.097   0.295  core/logic_chip/Madd_out_A29 (core/logic_chip/Madd_out_A29)
-     LUT4:I3->O            1   0.097   0.000  core/logic_chip/Madd_out_A_lut<0>30 (core/logic_chip/Madd_out_A_lut<0>30)
-     MUXCY:S->O            0   0.353   0.000  core/logic_chip/Madd_out_A_cy<0>_29 (core/logic_chip/Madd_out_A_cy<0>30)
-     XORCY:CI->O           1   0.370   0.000  core/logic_chip/Madd_out_A_xor<0>_30 (core/A2<31>)
-     FDE:D                     0.008          core/buff/reg_A_31
+     IBUF:I->O             2   0.001   0.283  in_data_31_IBUF (in_data_31_IBUF)
+     LD:D                     -0.028          mux/out_w_31
     ----------------------------------------
-    Total                      3.743ns (2.464ns logic, 1.279ns route)
-                                       (65.8% logic, 34.2% route)
+    Total                      0.284ns (0.001ns logic, 0.283ns route)
+                                       (0.4% logic, 99.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 48 / 48
+-------------------------------------------------------------------------
+Offset:              1.492ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       dispatcher/in_mem_addr_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to dispatcher/in_mem_addr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   0.001   0.752  reset_IBUF (reset_IBUF)
+     LUT5:I0->O            4   0.097   0.293  dispatcher/Reset_OR_DriverANDClockEnable3 (dispatcher/Reset_OR_DriverANDClockEnable)
+     FDRE:R                    0.349          dispatcher/in_mem_addr_0
+    ----------------------------------------
+    Total                      1.492ns (0.447ns logic, 1.045ns route)
+                                       (30.0% logic, 70.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -1322,24 +1392,25 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock clk
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-clk            |    6.201|         |         |         |
----------------+---------+---------+---------+---------+
+-----------------------------+---------+---------+---------+---------+
+                             | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                 |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-----------------------------+---------+---------+---------+---------+
+clk                          |    6.201|         |         |         |
+mux/GND_2_o_GND_2_o_equal_1_o|    0.992|    4.214|         |         |
+-----------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 20.00 secs
-Total CPU time to Xst completion: 20.44 secs
+Total REAL time to Xst completion: 21.00 secs
+Total CPU time to Xst completion: 20.52 secs
  
 --> 
 
-Total memory usage is 4633652 kilobytes
+Total memory usage is 4634740 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   12 (   0 filtered)
+Number of warnings :   76 (   0 filtered)
 Number of infos    :  513 (   0 filtered)
 

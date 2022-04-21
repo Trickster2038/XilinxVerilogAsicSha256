@@ -1,6 +1,7 @@
 `timescale 1ns / 1ps
 `include "main_block.v"
 `include "control_block.v"
+`include "input_mux.v"
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -21,12 +22,14 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module asic2(
-	clk, reset, in_w, in_var, out_var
+	clk, reset, in_data, out_var
     );
 	
 	input wire clk, reset;
-	input wire [31:0] in_var, in_w;
+	input wire [31:0] in_data;
 	output wire [31:0] out_var;
+	
+	wire [31:0] mux_w, mux_var;
 	
 	wire [5:0] _k_num;
 	wire [3:0] _in_mem_addr, 
@@ -34,8 +37,14 @@ module asic2(
 	wire _en_mem_out;
 	wire _en_mem_in;
 	
-	main_block core(.in_var(in_var), 
-		.in_w(in_w), .out_var(out_var),
+	input_mux mux(.addr(_in_mem_addr),
+	.in_data(in_data), 
+	.out_w(mux_w),
+	.out_var(mux_var)
+	);
+	
+	main_block core(.in_var(mux_var), 
+		.in_w(mux_w), .out_var(out_var),
 		.k_num(_k_num), 
 		.mem_in_addr(_in_mem_addr), 
 		.mem_out_addr(_out_mem_addr), 
