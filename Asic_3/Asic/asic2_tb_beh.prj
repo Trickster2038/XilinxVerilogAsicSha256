@@ -1,0 +1,3 @@
+verilog work "../source/asic2.v"
+verilog work "../testbench/asic2_tb.v"
+verilog work "E:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
