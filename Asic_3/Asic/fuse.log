@@ -31,8 +31,8 @@ Compiling module asic2
 Compiling module asic3_tb_mux
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 18 sub-compilation(s) to finish...
+Waiting for 19 sub-compilation(s) to finish...
 Compiled 22 Verilog Units
 Built simulation executable C:/Users/Professional/Desktop/XilinxVerilogAsicSha256/Asic_3/Asic/asic3_tb_mux_isim_beh.exe
-Fuse Memory Usage: 27628 KB
-Fuse CPU Usage: 468 ms
+Fuse Memory Usage: 28552 KB
+Fuse CPU Usage: 390 ms

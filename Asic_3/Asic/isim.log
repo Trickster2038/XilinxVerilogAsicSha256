@@ -31,8 +31,6 @@ In mem A, H: 6a09e667 xxxxxxxx
 In mem A, H: 6a09e667 xxxxxxxx
 [?] Out mem A, B: xxxxxxxx 6a09e667
 In mem A, H: 6a09e667 5be0cd19
-[?] Out mem A, B: 57e95566 6a09e667
-In mem A, H: 6a09e667 5be0cd19
 [?] Out mem A, B: fe08884d 6a09e667
 [v] Out mem A, B: fe08884d 6a09e667
 In mem A, H: xxxxxxxx xxxxxxxx
@@ -47,6 +45,5 @@ In mem A, H: fe08884d 1f83d9ab
 [?] Out mem A, B: 4cb3fda0 fe08884d
 In mem A, H: fe08884d 1f83d9ab
 [?] Out mem A, B: 4cb3fda0 fe08884d
-# run all
-# run all
-# run all
+In mem A, H: fe08884d 1f83d9ab
+[?] Out mem A, B: 4cb3fda0 fe08884d

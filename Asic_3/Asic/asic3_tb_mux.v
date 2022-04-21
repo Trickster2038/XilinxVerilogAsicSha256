@@ -89,8 +89,8 @@ module asic3_tb_mux;
 		#100; clk=1; #100; clk=0;
 		
 		// output 
-		#100; clk=1; #100; clk=0;
 		in_data = 32'h02000000;
+		#100; clk=1; #100; clk=0;
 		#100; clk=1; #100; clk=0;
 		// in_w = 32'h12300000;
 		

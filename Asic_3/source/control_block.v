@@ -31,9 +31,12 @@ module control_block(
 	output reg [3:0] in_mem_addr;
 	output reg [3:0] out_mem_addr;
 	output reg [5:0] k_num;
-	output reg en_mem_out, en_mem_in;
+	output reg en_mem_out;
 	reg [10:0] n;
 	reg [10:0] n_buf;
+	output wire en_mem_in;
+	
+	assign en_mem_in = 1;
 	
 	always @(posedge clk or posedge reset) begin
 		if (reset == 1) begin
@@ -44,19 +47,13 @@ module control_block(
 			if (clk == 1) begin
 				n <= n + 1;
 				if (n%9 != 0)
-				 if  (n%10 != 0) 
-					n_buf <= n_buf + 1;
+				 n_buf <= n_buf + 1;
 			end
 			
-			k_num = n/20;
+			k_num = n/19;
 			out_mem_addr <= n_buf%8 + 1;
 			
-			if (n == 9)
-				en_mem_in <= 0;
-			else
-				en_mem_in <= 1;
-			
-			if (n%10 == 0)
+			if (n%9 == 0)
 				en_mem_out <= 1;
 			else
 				en_mem_out <= 0;
