@@ -2,9 +2,9 @@ Command line:
    asic3_tb_mux_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  49709
+     -socket  49782
 
-Fri Apr 22 00:22:54 2022
+Wed May 04 17:09:53 2022
 
 
  Elaboration Time: 0.046875 sec

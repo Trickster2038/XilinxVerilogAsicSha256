@@ -1,0 +1,444 @@
+(edif asic2
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2022 5 3 13 44 30)
+      (program "Xilinx ngc2edif" (version "P.20131013"))
+      (author "Xilinx. Inc ")
+      (comment "This EDIF netlist is to be used within supported synthesis tools")
+      (comment "for determining resource/timing estimates of the design component")
+      (comment "represented by this netlist.")
+      (comment "Command line: -mdp2sp -w -secure asic2.ngc asic2.edif ")))
+  (external UNISIMS
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell GND
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port G
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+    (cell OBUF
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port I
+              (direction INPUT)
+            )
+            (port O
+              (direction OUTPUT)
+            )
+          )
+      )
+    )
+  )
+
+  (library asic2_lib
+    (edifLevel 0)
+    (technology (numberDefinition))
+    (cell asic2
+      (cellType GENERIC)
+        (view view_1
+          (viewType NETLIST)
+          (interface
+            (port clk
+              (direction INPUT)
+            )
+            (port reset
+              (direction INPUT)
+            )
+            (port (array (rename out_var "out_var<31:0>") 32)
+              (direction OUTPUT))
+            (port (array (rename in_data "in_data<31:0>") 32)
+              (direction INPUT))
+            (designator "xc3s400-4-pq208")
+            (property TYPE (string "asic2") (owner "Xilinx"))
+            (property BUS_INFO (string "32:OUTPUT:out_var<31:0>") (owner "Xilinx"))
+            (property BUS_INFO (string "32:INPUT:in_data<31:0>") (owner "Xilinx"))
+            (property NLW_UNIQUE_ID (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_TAG (integer 0) (owner "Xilinx"))
+            (property NLW_MACRO_ALIAS (string "asic2_asic2") (owner "Xilinx"))
+          )
+          (contents
+            (instance XST_GND
+              (viewRef view_1 (cellRef GND (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_31_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_30_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_29_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_28_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_27_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_26_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_25_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_24_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_23_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_22_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_21_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_20_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_19_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_18_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_17_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_16_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_15_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_14_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_13_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_12_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_11_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_10_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_9_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_8_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_7_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_6_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_5_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_4_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_3_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_2_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_1_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (instance out_var_0_OBUF
+              (viewRef view_1 (cellRef OBUF (libraryRef UNISIMS)))
+              (property XSTLIB (boolean (true)) (owner "Xilinx"))
+            )
+            (net N0
+              (joined
+                (portRef G (instanceRef XST_GND))
+                (portRef I (instanceRef out_var_31_OBUF))
+                (portRef I (instanceRef out_var_30_OBUF))
+                (portRef I (instanceRef out_var_29_OBUF))
+                (portRef I (instanceRef out_var_28_OBUF))
+                (portRef I (instanceRef out_var_27_OBUF))
+                (portRef I (instanceRef out_var_26_OBUF))
+                (portRef I (instanceRef out_var_25_OBUF))
+                (portRef I (instanceRef out_var_24_OBUF))
+                (portRef I (instanceRef out_var_23_OBUF))
+                (portRef I (instanceRef out_var_22_OBUF))
+                (portRef I (instanceRef out_var_21_OBUF))
+                (portRef I (instanceRef out_var_20_OBUF))
+                (portRef I (instanceRef out_var_19_OBUF))
+                (portRef I (instanceRef out_var_18_OBUF))
+                (portRef I (instanceRef out_var_17_OBUF))
+                (portRef I (instanceRef out_var_16_OBUF))
+                (portRef I (instanceRef out_var_15_OBUF))
+                (portRef I (instanceRef out_var_14_OBUF))
+                (portRef I (instanceRef out_var_13_OBUF))
+                (portRef I (instanceRef out_var_12_OBUF))
+                (portRef I (instanceRef out_var_11_OBUF))
+                (portRef I (instanceRef out_var_10_OBUF))
+                (portRef I (instanceRef out_var_9_OBUF))
+                (portRef I (instanceRef out_var_8_OBUF))
+                (portRef I (instanceRef out_var_7_OBUF))
+                (portRef I (instanceRef out_var_6_OBUF))
+                (portRef I (instanceRef out_var_5_OBUF))
+                (portRef I (instanceRef out_var_4_OBUF))
+                (portRef I (instanceRef out_var_3_OBUF))
+                (portRef I (instanceRef out_var_2_OBUF))
+                (portRef I (instanceRef out_var_1_OBUF))
+                (portRef I (instanceRef out_var_0_OBUF))
+              )
+            )
+            (net (rename out_var_0_ "out_var<0>")
+              (joined
+                (portRef (member out_var 31))
+                (portRef O (instanceRef out_var_0_OBUF))
+              )
+            )
+            (net (rename out_var_10_ "out_var<10>")
+              (joined
+                (portRef (member out_var 21))
+                (portRef O (instanceRef out_var_10_OBUF))
+              )
+            )
+            (net (rename out_var_11_ "out_var<11>")
+              (joined
+                (portRef (member out_var 20))
+                (portRef O (instanceRef out_var_11_OBUF))
+              )
+            )
+            (net (rename out_var_12_ "out_var<12>")
+              (joined
+                (portRef (member out_var 19))
+                (portRef O (instanceRef out_var_12_OBUF))
+              )
+            )
+            (net (rename out_var_13_ "out_var<13>")
+              (joined
+                (portRef (member out_var 18))
+                (portRef O (instanceRef out_var_13_OBUF))
+              )
+            )
+            (net (rename out_var_14_ "out_var<14>")
+              (joined
+                (portRef (member out_var 17))
+                (portRef O (instanceRef out_var_14_OBUF))
+              )
+            )
+            (net (rename out_var_15_ "out_var<15>")
+              (joined
+                (portRef (member out_var 16))
+                (portRef O (instanceRef out_var_15_OBUF))
+              )
+            )
+            (net (rename out_var_16_ "out_var<16>")
+              (joined
+                (portRef (member out_var 15))
+                (portRef O (instanceRef out_var_16_OBUF))
+              )
+            )
+            (net (rename out_var_17_ "out_var<17>")
+              (joined
+                (portRef (member out_var 14))
+                (portRef O (instanceRef out_var_17_OBUF))
+              )
+            )
+            (net (rename out_var_18_ "out_var<18>")
+              (joined
+                (portRef (member out_var 13))
+                (portRef O (instanceRef out_var_18_OBUF))
+              )
+            )
+            (net (rename out_var_19_ "out_var<19>")
+              (joined
+                (portRef (member out_var 12))
+                (portRef O (instanceRef out_var_19_OBUF))
+              )
+            )
+            (net (rename out_var_1_ "out_var<1>")
+              (joined
+                (portRef (member out_var 30))
+                (portRef O (instanceRef out_var_1_OBUF))
+              )
+            )
+            (net (rename out_var_20_ "out_var<20>")
+              (joined
+                (portRef (member out_var 11))
+                (portRef O (instanceRef out_var_20_OBUF))
+              )
+            )
+            (net (rename out_var_21_ "out_var<21>")
+              (joined
+                (portRef (member out_var 10))
+                (portRef O (instanceRef out_var_21_OBUF))
+              )
+            )
+            (net (rename out_var_22_ "out_var<22>")
+              (joined
+                (portRef (member out_var 9))
+                (portRef O (instanceRef out_var_22_OBUF))
+              )
+            )
+            (net (rename out_var_23_ "out_var<23>")
+              (joined
+                (portRef (member out_var 8))
+                (portRef O (instanceRef out_var_23_OBUF))
+              )
+            )
+            (net (rename out_var_24_ "out_var<24>")
+              (joined
+                (portRef (member out_var 7))
+                (portRef O (instanceRef out_var_24_OBUF))
+              )
+            )
+            (net (rename out_var_25_ "out_var<25>")
+              (joined
+                (portRef (member out_var 6))
+                (portRef O (instanceRef out_var_25_OBUF))
+              )
+            )
+            (net (rename out_var_26_ "out_var<26>")
+              (joined
+                (portRef (member out_var 5))
+                (portRef O (instanceRef out_var_26_OBUF))
+              )
+            )
+            (net (rename out_var_27_ "out_var<27>")
+              (joined
+                (portRef (member out_var 4))
+                (portRef O (instanceRef out_var_27_OBUF))
+              )
+            )
+            (net (rename out_var_28_ "out_var<28>")
+              (joined
+                (portRef (member out_var 3))
+                (portRef O (instanceRef out_var_28_OBUF))
+              )
+            )
+            (net (rename out_var_29_ "out_var<29>")
+              (joined
+                (portRef (member out_var 2))
+                (portRef O (instanceRef out_var_29_OBUF))
+              )
+            )
+            (net (rename out_var_2_ "out_var<2>")
+              (joined
+                (portRef (member out_var 29))
+                (portRef O (instanceRef out_var_2_OBUF))
+              )
+            )
+            (net (rename out_var_30_ "out_var<30>")
+              (joined
+                (portRef (member out_var 1))
+                (portRef O (instanceRef out_var_30_OBUF))
+              )
+            )
+            (net (rename out_var_31_ "out_var<31>")
+              (joined
+                (portRef (member out_var 0))
+                (portRef O (instanceRef out_var_31_OBUF))
+              )
+            )
+            (net (rename out_var_3_ "out_var<3>")
+              (joined
+                (portRef (member out_var 28))
+                (portRef O (instanceRef out_var_3_OBUF))
+              )
+            )
+            (net (rename out_var_4_ "out_var<4>")
+              (joined
+                (portRef (member out_var 27))
+                (portRef O (instanceRef out_var_4_OBUF))
+              )
+            )
+            (net (rename out_var_5_ "out_var<5>")
+              (joined
+                (portRef (member out_var 26))
+                (portRef O (instanceRef out_var_5_OBUF))
+              )
+            )
+            (net (rename out_var_6_ "out_var<6>")
+              (joined
+                (portRef (member out_var 25))
+                (portRef O (instanceRef out_var_6_OBUF))
+              )
+            )
+            (net (rename out_var_7_ "out_var<7>")
+              (joined
+                (portRef (member out_var 24))
+                (portRef O (instanceRef out_var_7_OBUF))
+              )
+            )
+            (net (rename out_var_8_ "out_var<8>")
+              (joined
+                (portRef (member out_var 23))
+                (portRef O (instanceRef out_var_8_OBUF))
+              )
+            )
+            (net (rename out_var_9_ "out_var<9>")
+              (joined
+                (portRef (member out_var 22))
+                (portRef O (instanceRef out_var_9_OBUF))
+              )
+            )
+          )
+      )
+    )
+  )
+
+  (design asic2
+    (cellRef asic2
+      (libraryRef asic2_lib)
+    )
+    (property PART (string "xc3s400-4-pq208") (owner "Xilinx"))
+  )
+)
+
